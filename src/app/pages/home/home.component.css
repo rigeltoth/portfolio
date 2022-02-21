@@ -1,0 +1,24 @@
+.bg-dots {
+  background-image: url('../../../assets/img/dots.png');
+  background-size: 90rem;
+}
+
+.z-i{
+  position:absolute;
+  left: 50%;
+  margin-top: 30rem;
+  z-index: 0;
+  filter: opacity(5%);
+  height: 30rem;
+}
+.z-i2{
+  position:absolute;
+  left: 15%;
+  padding-top: 20rem;
+  z-index: 0;
+  filter: opacity(5%);
+  height: 50rem;
+}
+.z-2{
+  z-index: 2;
+}

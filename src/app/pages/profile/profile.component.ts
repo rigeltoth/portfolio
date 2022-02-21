@@ -10,6 +10,13 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.changeNavbarColorOnScroll()
   }
 
+  changeNavbarColorOnScroll(){
+    window.addEventListener('scroll', () => {
+      var nav = document.querySelector('nav');
+      nav?.classList.toggle('bg-indigo-900', window.scrollY > 0)
+    })
+  }
 }

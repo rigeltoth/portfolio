@@ -1,1 +1,133 @@
-<p>home works!</p>
+<nav class="flex items-center justify-around flex-wrap bg-transparent fixed left-0 right-0 p-4 z-10">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič &#8226;</span>
+    <span class="font-light text-lg tracking-tight ml-2">Web Developer</span></a>
+  </div>
+  <div class="block lg:hidden">
+    <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div>
+  <div id='menu' class="w-full block justify-end lg:flex lg:items-center lg:w-auto">
+    <div>
+      <a [routerLink]="['/landing']" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-sky-500 hover:scale-105 mr-4">
+        Services
+      </a>
+      <a [routerLink]="['/profile']" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-sky-500 hover:scale-105 mr-4">
+        Profile
+      </a>
+      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-sky-500 hover:border-sky-500 hover:text-sky-500 hover:bg-transparent hover:ring-2 mt-4 lg:mt-0">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="bg-gradient-to-r from-indigo-900 to-violet-900">
+  <img class="z-i " src="./assets/img/path1.png">
+  <div class="bg-dots">
+    <div class="container flex h-[32rem] flex-wrap items-center justify-center ">
+      <h1 class="text-center text-4xl text-white font-bold">Welcome to the web universe, <br>
+      <span class="text-center text-3xl text-white font-bold">Let's create your world to change your life</span> </h1>
+    </div>
+
+    <div class="container h-[28rem]">
+      <div class="flex flex-row justify-center mt-4 ">
+        <div class="flex flex-col w-5/12 ring-1 rounded ring-pink-500 drop-shadow-2xl hover:-translate-y-1 mr-5">
+          <a [routerLink]="['/landing']" > <img class="rounded" src="./assets/img/landing-page.png" alt="Services"> </a>
+        </div>
+        <div class="flex flex-col w-5/12 ring-1 rounded ring-pink-500 drop-shadow-2xl hover:-translate-y-1 ml-5">
+          <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
+        </div>
+      </div>
+      <div class="flex flex-row justify-around mt-4">
+        <div class="flex flex-col w-auto z-2">
+          <a [routerLink]="['/profile']" class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-105 mt-4 lg:mt-0">Wiew Products</a>
+        </div>
+        <div class="flex flex-col w-auto z-2">
+          <a [routerLink]="['/landing']" class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-105 mt-4 lg:mt-0">Wiew Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container h-[32rem] flex flex-row justify-evenly items-center" >
+      <img class="z-i2" src="./assets/img/path2.png">
+      <div class="max-w-sm rounded flex-col overflow-hidden shadow-lg z-2 hover:scale-105 hover:ring-1 hover:ring-blue-500">
+        <img class="w-20 mx-auto my-7" src="./assets/img/ripp.png" alt="Sunset in the mountains">
+        <div class="px-6 py-4 text-center ">
+          <div class="font-bold text-xl text-blue-500 mb-2">The Coldest Sunset</div>
+          <p class="text-white text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 pb-2 m-4 flex justify-center">
+          <a href="#" class="inline-block text-sm px-4 py-2 leading-none rounded-md text-sky-500 border border-sky-500 hover:ring-2 ring-sky-500 mt-4 lg:mt-0">View</a>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 hover:ring-2 ring-pink-500">
+        <img class="w-20 mx-auto my-7" src="./assets/img/bitcoin.png" alt="bitcoin">
+        <div class="px-6 py-4 text-center ">
+          <div class="font-bold text-xl mb-2 text-pink-500">The Coldest Sunset</div>
+          <p class="text-white text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 py-4 flex justify-center">
+          <a href="#" class="inline-block text-sm px-4 py-2 leading-none rounded-md text-pink-500 border border-pink-500 hover:ring-2 ring-pink-500 mt-4 lg:mt-0">View</a>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 hover:ring-2 hover:ring-teal-500 ">
+        <img class="w-20 mx-auto my-7" src="./assets/img/ethereum.png" alt="Sunset in the mountains">
+        <div class="px-6 py-4 text-center ">
+          <div class="font-bold text-xl text-teal-500 mb-2">The Coldest Sunset</div>
+          <p class="text-white text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 py-4 flex justify-center">
+          <a href="#" class="inline-block text-sm px-4 py-2 leading-none rounded-md text-teal-500 border border-teal-500 hover:ring-2 ring-teal-500 mt-4 lg:mt-0">View</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container flex flex-row justify-between items-center">
+      <div class="flex flex-col w-2/5 m-auto">
+        <h1 class="text-center text-4xl text-white ">
+          Do you want to work together?, leave your information here and we will contact you.
+        </h1>
+      </div>
+      <div class="flex flex-col bg-transparent p-5 m-auto drop-shadow-2xl">
+        <div class="flex items-center justify-center h-screen">
+          <div class="bg-transparent font-semibold text-center rounded-3xl border-2 border-sky-500 hover:ring-2 shadow-lg p-10 max-w-xs">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg" alt="product designer">
+            <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
+            <h3 class="text-sm text-sky-600 "> Web Developer </h3>
+            <p class="text-xs text-gray-400 mt-4 mb-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-sky-500 hover:text-sky-500 hover:bg-transparent hover:ring-2 mt-4 lg:mt-0">HIRE ME</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="bg-gradient-to-r from-indigo-900 to-violet-900  border-t-2 border-pink-400">
+  <div class="container h-32 ">
+    <div class="flex flex-row justify-center mt-4 text-white">
+      <h1 class="m-2" >Twitter</h1>
+      <h1 class="m-2" >Github</h1>
+      <h1 class="m-2" >Discord</h1>
+    </div>
+    <div class="flex flex-row justify-center">
+      <div class="flex-col m-auto text-white">
+        <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič  &#8226;</span>
+          <span class="font-light text-lg tracking-tight ml-2">Web Developer</span></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
