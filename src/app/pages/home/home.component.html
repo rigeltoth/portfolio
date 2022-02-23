@@ -5,8 +5,7 @@
   </div>
   <div class="block lg:hidden">
     <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
+    boton</button>
   </div>
   <div id='menu' class="w-full block justify-end lg:flex lg:items-center lg:w-auto">
     <div>
@@ -25,34 +24,38 @@
 </nav>
 
 <div class="bg-gradient-to-r from-ndg to-indigo-900">
-  <img class="z-i " src="./assets/img/path1.png">
-  <div class="bg-dots">
-    <div class="container flex h-[32rem] flex-wrap items-center justify-center ">
+  <img class="z-i left-1/4 h-96 mt-40 opacity-5 absolute" src="./assets/img/path1.png">
+  <div class="container bg-dots">
+    <div class="container flex h-screen flex-wrap items-center justify-center ">
       <h1 class="text-center text-4xl text-white font-bold">Welcome to the web universe, <br>
       <span class="text-center text-3xl text-white font-bold">Let's create your world to change your life</span> </h1>
     </div>
-    
-    <div class="container h-[28rem]">
-      <div class="flex flex-row justify-center mt-4 ">
-        <div class="flex flex-col w-5/12 ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-1 mr-5">
-          <a [routerLink]="['/landing']" > <img class="rounded" src="./assets/img/landing-page.png" alt="Services"> </a>
-        </div>
-        <div class="flex flex-col w-5/12 ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-1 ml-5">
+
+    <img class="z-i2 h-96 right-0 mt-10 opacity-5 absolute" src="./assets/img/path2.png">
+    <!-- profile-page landing-page -->
+    <div class="container flex flex-row flex-wrap justify-evenly px-20" >
+      <div class="flex flex-col lg:w-2/5">
+        <div class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
           <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
         </div>
-      </div>
-      <div class="flex flex-row justify-around mt-4">
-        <div class="flex flex-col w-auto z-2">
+        <div class="flex flex-row justify-center mt-5">
           <a [routerLink]="['/profile']" class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-110 ease-in-out duration-300 mt-4 lg:mt-0">Wiew Products</a>
         </div>
-        <div class="flex flex-col w-auto z-2">
+      </div>
+      <div class="flex flex-col lg:w-2/5">
+        <div class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
+          <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
+        </div>
+
+        <div class="flex flex-row justify-center mt-5">
           <a [routerLink]="['/landing']" class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-110 ease-in-out duration-300 mt-4 lg:mt-0">Wiew Profile</a>
         </div>
       </div>
     </div>
 
-    <div class="container h-[32rem] flex flex-row justify-evenly items-center" >
-      <img class="z-i2" src="./assets/img/path2.png">
+    <!-- neon cards -->
+    <img class="z-i2 h-96 botton-0 left-0 mt-60 opacity-5 absolute" src="./assets/img/path3.png">
+    <div class="container h-screen flex flex-row flex-wrap justify-evenly items-center" >
       <div class="max-w-sm rounded flex-col overflow-hidden shadow-lg z-2 ease-in-out duration-300 hover:scale-105 hover:ring-2 hover:ring-bl">
         <img class="w-20 mx-auto my-7" src="./assets/img/ripp.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
@@ -95,7 +98,8 @@
 
     </div>
 
-    <div class="container flex flex-row justify-between items-center">
+    <!-- hire me -->
+    <div class="container flex flex-row flex-wrap justify-between items-center">
       <div class="flex flex-col w-2/5 m-auto">
         <h1 class="text-center text-4xl text-white ">
           Do you want to work together?, leave your information here and we will contact you.
