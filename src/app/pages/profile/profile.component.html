@@ -32,8 +32,9 @@
     <div class="container grid grid-cols-1 lg:grid-cols-2 justify-around items-center">
 
       <div class="grid grid-rows-2">
-        <div class="text-6xl text-white text-center font-bold mt-20 opacity-70">
-            Skills
+        <div class="">
+            <h1 class="text-6xl text-white text-center font-bold mt-20 opacity-70">Skills</h1>
+            
         </div>
         <div class="text-right text-white sm:px-4 lg:px-10 sm:m-2 lg:m-10">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita suscipit, inventore magni modi ut quam fugit similique provident consequatur iusto velit non quas corrupti dolor maxime perferendis qui assumenda quia quibusdam.
@@ -72,8 +73,12 @@
 
     <!-- <a name="contact" id="contact"></a> -->
     <div class="container grid grid-cols-2 justify-around items-center" id="contact">
-      <div class="m-10">
-        
+      <div class="m-10 swiper">
+        <swiper [config]="config" >
+          <div class="swiper-wrapper">
+            <img class="swiper-slide" *ngFor="let img of Imgs" [src]="img.src" [alt]="img.alt" />
+          </div>
+        </swiper>
       </div>
 
       <div class="grid grid-rows-2">

@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    NgxUsefulSwiperModule
   ]
 })
 export class PagesModule { }
