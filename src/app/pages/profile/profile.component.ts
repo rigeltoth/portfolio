@@ -58,6 +58,7 @@ export class ProfileComponent implements OnInit {
     effect: 'coverflow',
     autoplay: {
       delay: 1000,
+      disableOnInteraction: false
     },
     spaceBetween: 80,
     centeredSlides: true,
