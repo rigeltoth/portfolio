@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     NavigationComponent

@@ -2,26 +2,28 @@
   <img class="z-i left-1/4 h-96 mt-40 opacity-5 absolute" src="./assets/img/path1.png">
   <div class="container bg-dots">
     <div class="container flex h-screen flex-wrap items-center justify-center ">
-      <h1 class="text-center text-4xl text-white font-bold">Welcome to the web universe, <br>
-        <span class="text-center text-3xl text-white font-bold">Let's create your world to change your life</span>
+      <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
+        class="text-center text-4xl text-white font-bold">Welcome to the web universe, <br>
+        <span class="text-center text-3xl text-white font-bold">Let's create your world, to change your life</span>
       </h1>
     </div>
-
-    <img class="z-i2 h-96 right-0 mt-10 opacity-5 absolute" src="./assets/img/path2.png">
+    <img class="z-i2 h-96 center mt-10 opacity-5 absolute" src="./assets/img/path2.png">
     <!-- profile-page landing-page -->
     <div class="container flex flex-row flex-wrap justify-evenly px-20">
-      <div class="flex flex-col lg:w-2/5">
+      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="500"
+        class="flex flex-col lg:w-2/5">
         <div
           class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
           <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
         </div>
         <div class="flex flex-row justify-center mt-5">
-          <a [routerLink]="['/profile']"
+          <a [routerLink]="['/landing']"
             class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-110 ease-in-out duration-300 mt-4 lg:mt-0">Wiew
             Products</a>
         </div>
       </div>
-      <div class="flex flex-col lg:w-2/5">
+      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="500"
+        class="flex flex-col lg:w-2/5">
         <div
           class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
           <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
@@ -38,11 +40,11 @@
     <!-- neon cards -->
     <img class="z-i2 h-96 botton-0 left-0 mt-60 opacity-5 absolute" src="./assets/img/path3.png">
     <div class="container h-screen flex flex-row flex-wrap justify-evenly items-center">
-      <div
+      <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="1000"
         class="max-w-sm rounded flex-col overflow-hidden shadow-lg z-2 ease-in-out duration-300 hover:scale-105 hover:ring-2 hover:ring-bl">
         <img class="w-20 mx-auto my-7" src="./assets/img/ripp.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
-          <div class="font-bold text-xl text-bl mb-2">The Coldest Sunset</div>
+          <div class="font-bold text-xl text-bl mb-2">Emerging Crypto Projects</div>
           <p class="text-white text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
             eaque, exercitationem praesentium nihil.
@@ -54,11 +56,11 @@
         </div>
       </div>
 
-      <div
+      <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="1000"
         class="max-w-sm rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300 hover:ring-2 ring-pink-500">
         <img class="w-20 mx-auto my-7" src="./assets/img/bitcoin.png" alt="bitcoin">
         <div class="px-6 py-4 text-center ">
-          <div class="font-bold text-xl mb-2 text-pink-500">The Coldest Sunset</div>
+          <div class="font-bold text-xl mb-2 text-pink-500">The Biggest Crypto</div>
           <p class="text-white text-base">
             <span class="card">card</span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
@@ -71,11 +73,11 @@
         </div>
       </div>
 
-      <div
+      <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-delay="1000"
         class="max-w-sm rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300  hover:ring-2 hover:ring-grn ">
         <img class="w-20 mx-auto my-7" src="./assets/img/ethereum.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
-          <div class="font-bold text-xl text-grn mb-2">The Coldest Sunset</div>
+          <div class="font-bold text-xl text-grn mb-2">Smart Contracts</div>
           <p class="text-white text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
             eaque, exercitationem praesentium nihil.
@@ -87,49 +89,52 @@
         </div>
       </div>
 
-    </div>
-
-    <!-- hire me -->
-    <div class="container flex flex-row flex-wrap justify-between items-center">
-      <div class="flex flex-col w-2/5 m-auto">
-        <h1 class="text-center text-4xl text-white ">
-          Do you want to work together?, leave your information here and we will contact you.
-        </h1>
-      </div>
-      <div class="flex flex-col bg-transparent p-5 m-auto drop-shadow-2xl">
-        <div class="flex items-center justify-center h-screen">
-          <div
-            class="bg-transparent hover:bg-indigo-900 font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg p-10 max-w-xs">
-            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
-              alt="product designer">
-            <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
-            <h3 class="text-sm text-sky-600 "> Web Developer </h3>
-            <p class="text-xs text-gray-400 mt-4 mb-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <a href="#"
-              class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-bl ease-in-out duration-300 hover:text-bl hover:bg-transparent hover:scale-110 hover:ring-2 lg:mt-0">HIRE
-              ME</a>
+      <!-- hire me -->
+      <div class="container flex flex-row flex-wrap justify-between items-center">
+        <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000"
+          class="flex flex-col w-2/5 m-auto">
+          <h1 class="text-center text-4xl text-white ">
+            Do you want to work together?, leave your information here and we will contact you.
+          </h1>
+        </div>
+        <div class="flex flex-col bg-transparent p-5 m-auto drop-shadow-2xl">
+          <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000"
+            class="flex items-center justify-center h-screen">
+            <div
+              class="bg-transparent hover:bg-indigo-900 font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg p-10 max-w-xs">
+              <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
+                alt="product designer">
+              <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
+              <h3 class="text-sm text-sky-600 "> Web Developer </h3>
+              <p class="text-xs text-gray-400 mt-4 mb-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <a href="#"
+                class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-bl ease-in-out duration-300 hover:text-bl hover:bg-transparent hover:scale-110 hover:ring-2 lg:mt-0">HIRE
+                ME</a>
+            </div>
           </div>
         </div>
       </div>
+
+
+
     </div>
-
-
-
   </div>
-</div>
-<div class="bg-gradient-to-r from-ndg to-indigo-900  border-t-2 border-pnk">
-  <div class="container h-32 ">
-    <div class="flex flex-row justify-center mt-4 text-white">
-      <h1 class="m-2">Twitter</h1>
-      <h1 class="m-2">Github</h1>
-      <h1 class="m-2">Discord</h1>
-    </div>
-    <div class="flex flex-row justify-center">
-      <div class="flex-col m-auto text-white">
-        <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič &#8226;</span>
-          <span class="font-light text-lg tracking-tight ml-2">Web Developer</span></a>
+  <div class="bg-gradient-to-r from-ndg to-indigo-900  border-t-2 border-pnk">
+    <div class="container h-32 ">
+      <div class="flex flex-row justify-center mt-4 text-white">
+        <h1 class="m-2">Twitter</h1>
+        <h1 class="m-2">Github</h1>
+        <h1 class="m-2">Discord</h1>
+      </div>
+      <div class="flex flex-row justify-center">
+        <div class="flex-col m-auto text-white">
+          <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič &#8226;</span>
+            <span class="font-light text-lg tracking-tight ml-2">Web Developer</span></a>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
