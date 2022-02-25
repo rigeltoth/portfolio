@@ -48,7 +48,7 @@ export class ProfileComponent implements OnInit {
     }, {
       src: './assets/imgwt/tailwind.png',
       alt: 'TalwindCSS'
-    }  
+    }
   ]
 
   config: SwiperOptions = {
@@ -63,23 +63,23 @@ export class ProfileComponent implements OnInit {
     spaceBetween: 80,
     centeredSlides: true,
     slidesPerView: 'auto',
-    coverflowEffect:{
+    coverflowEffect: {
       rotate: 0,
       stretch: 5,
       depth: 85,
       modifier: 2,
       slideShadows: true
     },
-    
-    
-  } 
+
+
+  }
   constructor() { }
 
   ngOnInit(): void {
     this.changeNavbarColorOnScroll()
   }
 
-  changeNavbarColorOnScroll(){
+  changeNavbarColorOnScroll() {
     window.addEventListener('scroll', () => {
       var nav = document.querySelector('nav');
       nav?.classList.toggle('bg-indigo-900', window.scrollY > 0)

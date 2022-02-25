@@ -1,30 +1,4 @@
-<nav class="flex items-center justify-around flex-wrap bg-transparent fixed left-0 right-0 p-4 z-10">
-  <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič &#8226;</span>
-    <span class="font-light text-lg tracking-tight ml-2">Web Developer</span></a>
-  </div>
-  <div class="block lg:hidden">
-    <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
-  </div>
-  <div id='menu' class="w-full block justify-end lg:flex lg:items-center lg:w-auto">
-    <div>
-      <a [routerLink]="['/home']" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-bl ease-in-out duration-300 hover:scale-110 mr-4">
-        Home
-      </a>
-      <a [routerLink]="['/profile']" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-bl ease-in-out duration-300 hover:scale-110 mr-4">
-        Profile
-      </a>
-      <a [routerLink]="['/landing']" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-bl ease-in-out duration-300 hover:scale-110 mr-4">
-        Services
-      </a>
-      <a href="#contact" class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-sky-500 hover:border-sky-500 hover:text-sky-500 hover:bg-transparent ease-in-out duration-300 hover:scale-110 hover:ring-2 mt-4 lg:mt-0">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<div class="bg-gradient-to-r from-indigo-900 to-violet-900">
+<div class="bg-gradient-to-r from-ndg to-indigo-900">
   <img class="opacity-10 sm:h-12 lg:h-screen absolute z-0 mt-32" src="./assets/img/path1.png">
 
   <div class="bg-dots">
@@ -32,19 +6,25 @@
     <div class="container grid grid-cols-2 justify-around items-center" id="contact">
       <div class="m-20 swiper mx-auto">
         <h1 class="text-6xl text-white text-center font-bold mt-20 opacity-70">Skills</h1>
-        <swiper [config]="config" >
+        <swiper [config]="config">
           <div class="swiper-wrapper">
             <img class="swiper-slide" *ngFor="let img of Imgs" [src]="img.src" [alt]="img.alt" />
           </div>
         </swiper>
-        <h1 class="text-right text-white sm:px-4 lg:px-10 sm:m-2 lg:m-10"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita suscipit, inventore magni modi ut quam fugit similique provident consequatur iusto velit non quas corrupti dolor maxime perferendis qui assumenda quia quibusdam.
-        </h1>
+        <h1 class="text-right text-white sm:px-4 lg:px-10 sm:m-2 lg:m-10">
+          Creation and deployment of SPA applications, using Angular 12+ for the frontend, applying concepts such as
+          routing, services, pipes, and Interfaces, connecting to API REST through HttpClient, for styles I can use
+          SCSS, Tailwind CCS, Bootstrap 4-5 and Bootswatch, including responsive UI/UX designs
+          For the NodeJs Backend, using RxJs, Express and some Middlewares like morgan, I can communicate to NoSQL
+          databases like MongoDB(including Atlas), or SQL like MySQL </h1>
       </div>
 
       <div class="bg-transparent mt-4 drop-shadow-2xl">
         <div class="flex items-center justify-center h-screen">
-          <div class="bg-transparent font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg py-10 px-20 max-w-xs">
-            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg" alt="product designer">
+          <div
+            class="bg-transparent font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg py-10 px-20 max-w-xs">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
+              alt="product designer">
 
             <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
             <h3 class="text-sm text-sky-600 mb-6"> Pro Skills</h3>
@@ -64,25 +44,27 @@
               <div class="bg-grn h-2 rounded-full" style="width: 95%"></div>
             </div>
 
-            <a href="#" class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-sky-500 hover:text-sky-500 hover:bg-transparent hover:ring-2 lg:mt-0">HIRE ME</a>
+            <a href="#"
+              class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-sky-500 hover:text-sky-500 hover:bg-transparent hover:ring-2 lg:mt-0">HIRE
+              ME</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="bg-gradient-to-r from-indigo-900 to-violet-900  border-t-2 border-pink-400">
+<div class="bg-gradient-to-r from-ndg to-indigo-900 border-t-2 border-pink-400">
   <div class="container h-32 ">
     <div class="flex flex-row justify-center mt-4 text-white">
-      <h1 class="m-2" >Twitter</h1>
-      <h1 class="m-2" >Github</h1>
-      <h1 class="m-2" >Discord</h1>
+      <h1 class="m-2">Twitter</h1>
+      <h1 class="m-2">Github</h1>
+      <h1 class="m-2">Discord</h1>
     </div>
     <div class="flex flex-row justify-center">
       <div class="flex-col m-auto text-white">
-        <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič  &#8226;</span>
+        <a [routerLink]="['/home']"> <span class="font-semibold text-xl tracking-tight ml-1">Ronnovič &#8226;</span>
           <span class="font-light text-lg tracking-tight ml-2">Web Developer</span></a>
-        </div>
+      </div>
     </div>
   </div>
 </div>
