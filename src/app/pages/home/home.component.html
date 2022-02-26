@@ -1,23 +1,21 @@
 <div class="bg-gradient-to-r from-ndg to-indigo-900">
-  <div class="container bg-dots">
-    <img class="z-i left-1/4 h-10 sm:h-20 lg:h-96 mt-40 opacity-5 absolute " src="./assets/img/path1min.png">
-    <div class="container flex h-screen flex-wrap items-center justify-center ">
+    <img class="z-0 left-1/4 h-32 lg:h-96 mt-40 opacity-5 absolute " src="./assets/img/path1min.png">
+    <div class="container flex h-screen flex-wrap items-center justify-center w-full">
       <!-- <img class="absolute" src="./assets/img/galaxy" alt="galaxy"> -->
       <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
-        class="text-center text-4xl text-white font-bold">Welcome to the web universe, <br>
+        class="text-center text-3xl text-white font-bold">Welcome to the web universe, <br>
         <span class="text-center text-3xl text-white font-bold">Let's build an incredible digital world.</span>
       </h1>
     </div>
 
-    <img class="z-i2 h-10 sm:h-20 lg:h-96 center mt-10 opacity-5 absolute" src="./assets/img/path2min.png">
+    <img class="z-0 h-32 sm:h-48 lg:h-96 center mt-10 opacity-5 absolute" src="./assets/img/path2min.png">
     <!-- profile-page and landing-page -->
-    <div class="container flex flex-row flex-wrap justify-evenly px-2 lg:px-20">
-      <div
-        data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="500"
+    <div class="container flex flex-row h-96 flex-wrap items-center justify-evenly px-2 lg:px-20">
+      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" 
         class="flex flex-col lg:w-2/5">
         <div
           class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
-          <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
+          <a [routerLink]="['/landing']"> <img class="rounded" src="./assets/img/lndng.png" alt="Profile"> </a>
         </div>
         <div class="flex flex-row justify-center my-5">
           <a [routerLink]="['/landing']"
@@ -25,16 +23,14 @@
             Services</a>
         </div>
       </div>
-      <div
-        data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="500"
+      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" 
         class="flex flex-col lg:w-2/5">
         <div
           class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
-          <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/profile-page.png" alt="Profile"> </a>
+          <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/prfl.png" alt="Profile"> </a>
         </div>
-
-        <div class="flex flex-row justify-center mt-5">
-          <a [routerLink]="['/landing']"
+        <div class="flex flex-row justify-center my-5">
+          <a [routerLink]="['/profile']"
             class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-110 ease-in-out duration-300 mt-4 lg:mt-0">Wiew
             Profile</a>
         </div>
@@ -42,11 +38,11 @@
     </div>
 
     <!-- neon cards -->
-    <img class="z-i2 h-10  sm:h-20 lg:h-96 botton-0 left-0 mt-60 opacity-5 absolute" src="./assets/img/path3min.png">
-    <div class="container h-screen flex flex-row flex-wrap justify-evenly items-center">
-      <div
-        data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000"
-        class="max-w-sm rounded flex-col overflow-hidden shadow-lg z-2 ease-in-out duration-300 hover:scale-105 hover:ring-2 hover:ring-bl">
+    <img class="z-0 h-32 lg:h-96 botton-0 left-0 mt-60 opacity-5 absolute" src="./assets/img/path3min.png">
+    <div class="container h-screen mt-60 lg:mt-24 flex flex-row flex-wrap justify-evenly items-center">
+
+      <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000"
+        class="max-w-sm rounded m-3 flex-col overflow-hidden shadow-lg z-2 ease-in-out duration-300 hover:scale-110 hover:ring-2 hover:ring-bl">
         <img class="w-20 mx-auto my-7" src="./assets/img/ripp.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
           <div class="font-bold text-xl text-bl mb-2">Emerging Crypto Projects</div>
@@ -55,15 +51,14 @@
             eaque, exercitationem praesentium nihil.
           </p>
         </div>
-        <div class="px-6 pb-2 m-4 flex justify-center">
+        <div class="px-6 py-4 pb-2 m-4 flex justify-center">
           <a href="#"
             class="inline-block text-sm px-4 py-2 leading-none rounded-md text-bl ease-in-out duration-300 border border-bl hover:ring-2 ring-bl mt-4 lg:mt-0">View</a>
         </div>
       </div>
 
-      <div
-        data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000"
-        class="max-w-sm rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300 hover:ring-2 ring-pink-500">
+      <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000"
+        class="max-w-sm m-3 rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300 hover:ring-2 ring-pink-500">
         <img class="w-20 mx-auto my-7" src="./assets/img/bitcoin.png" alt="bitcoin">
         <div class="px-6 py-4 text-center ">
           <div class="font-bold text-xl mb-2 text-pink-500">The Biggest Crypto</div>
@@ -79,9 +74,8 @@
         </div>
       </div>
 
-      <div
-        data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000"
-        class="max-w-sm rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300  hover:ring-2 hover:ring-grn ">
+      <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+        class="max-w-sm m-3 rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300  hover:ring-2 hover:ring-grn ">
         <img class="w-20 mx-auto my-7" src="./assets/img/ethereum.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
           <div class="font-bold text-xl text-grn mb-2">Smart Contracts</div>
@@ -99,15 +93,14 @@
     </div>
 
     <!-- hire me -->
-    <div class="container flex flex-row flex-wrap justify-between items-center">
-      <div
-        data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000"
-        class="flex flex-col w-2/5 m-auto">
-        <h1 class="text-center text-4xl text-white ">
+    <div class="container mt-[48rem] lg:mt-96 flex flex-row flex-wrap justify-between items-center">
+      <div class="container flex flex-col flex-wrap items-center justify-center ">
+        <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
+          class="text-center mx-10 w-full text-4xl text-white font-light">
           Do you want to work together?, I'm sure we'll do very well.
         </h1>
       </div>
-      <div class="flex flex-col bg-transparent p-5 m-auto drop-shadow-2xl">
+      <div class="flex flex-col bg-transparent p-5 items-center justify-center drop-shadow-2xl">
         <div
           data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000"
           class="flex items-center justify-center h-screen">
@@ -127,8 +120,4 @@
         </div>
       </div>
     </div>
-
-
-
-  </div>
 </div>
