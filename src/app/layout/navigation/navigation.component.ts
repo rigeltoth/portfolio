@@ -18,10 +18,10 @@ export class NavigationComponent implements OnInit {
   changeNavbarColorOnScroll(){
     window.addEventListener('scroll', () => {
       var nav = document.querySelector('nav');
+      nav?.classList.toggle('opacity-5', window.scrollY > 0)
       nav?.classList.toggle('bg-gradient-to-r', window.scrollY > 0)
       nav?.classList.toggle('from-ndg', window.scrollY > 0)
       nav?.classList.toggle('to-indigo-900', window.scrollY > 0)
-      nav?.classList.toggle('opacity-90', window.scrollY > 0)
     })
   }
 }
