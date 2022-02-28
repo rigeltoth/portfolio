@@ -8,6 +8,7 @@ import * as AOS from 'aos';
 })
 export class NavigationComponent implements OnInit {
 
+  toggleClasses = ['opacity-95','bg-gradient-to-r','from-ndg','to-indigo-900']
   constructor() { }
 
   ngOnInit(): void {
@@ -15,13 +16,26 @@ export class NavigationComponent implements OnInit {
     this.changeNavbarColorOnScroll()
   }
 
+  /* const classToggle = (el, ...args) => {
+  args.map(e => el.classList.toggle(e))
+} */
+
   changeNavbarColorOnScroll(){
     window.addEventListener('scroll', () => {
-      var nav = document.querySelector('nav');
-      nav?.classList.toggle('opacity-5', window.scrollY > 0)
+      const nav = document.querySelector('nav')
       nav?.classList.toggle('bg-gradient-to-r', window.scrollY > 0)
       nav?.classList.toggle('from-ndg', window.scrollY > 0)
       nav?.classList.toggle('to-indigo-900', window.scrollY > 0)
+      nav?.classList.toggle('opacity-50', window.scrollY > 0)
     })
+  }
+
+  toggle(){
+    const menu = document.querySelector('#menu')
+    menu?.classList.toggle('hidden')
+  }
+  autohide(){
+    const menu = document.querySelector('#menu')
+    menu?.classList.add("hidden")
   }
 }

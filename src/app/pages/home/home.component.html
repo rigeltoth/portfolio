@@ -1,109 +1,108 @@
-<div class="bg-gradient-to-r from-ndg to-indigo-900">
-    <img class="z-0 left-1/4 h-32 lg:h-96 mt-40 opacity-5 absolute " src="./assets/img/path1min.png">
+<div class="backgroung">
+    <img class="bg-img center" src="./assets/img/path1min.png">
     <div class="container flex h-screen flex-wrap items-center justify-center w-full">
-      <!-- <img class="absolute" src="./assets/img/galaxy" alt="galaxy"> -->
       <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
         class="text-center text-3xl text-white font-bold">Welcome to the web universe, <br>
         <span class="text-center text-3xl text-white font-bold">Let's build an incredible digital world.</span>
       </h1>
     </div>
 
-    <img class="z-0 h-32 sm:h-48 lg:h-96 center mt-10 opacity-5 absolute" src="./assets/img/path2min.png">
+    <img class="bg-img center" src="./assets/img/path2min.png">
     <!-- profile-page and landing-page -->
     <div class="container flex flex-row h-96 flex-wrap items-center justify-evenly px-2 lg:px-20">
-      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" 
+      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000"
         class="flex flex-col lg:w-2/5">
         <div
-          class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
+          class="img-pl">
           <a [routerLink]="['/landing']"> <img class="rounded" src="./assets/img/lndng.png" alt="Profile"> </a>
         </div>
         <div class="flex flex-row justify-center my-5">
           <a [routerLink]="['/landing']"
-            class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-110 ease-in-out duration-300 mt-4 lg:mt-0">Wiew
+            class="alink-pl">Wiew
             Services</a>
         </div>
       </div>
-      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000" 
+      <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000"
         class="flex flex-col lg:w-2/5">
         <div
-          class="flex flex-row ring-1 rounded ring-pink-500 drop-shadow-2xl ease-in-out duration-300 hover:-translate-y-2">
+          class="img-pl">
           <a [routerLink]="['/profile']"> <img class="rounded" src="./assets/img/prfl.png" alt="Profile"> </a>
         </div>
         <div class="flex flex-row justify-center my-5">
           <a [routerLink]="['/profile']"
-            class="inline-block font-light text-xl px-4 py-2 leading-none border rounded-full text-pink-500 border-pink-500 hover:border-pink-600 hover:text-pink-500 hover:bg-transparent hover:scale-110 ease-in-out duration-300 mt-4 lg:mt-0">Wiew
+            class="alink-pl">Wiew
             Profile</a>
         </div>
       </div>
     </div>
 
     <!-- neon cards -->
-    <img class="z-0 h-32 lg:h-96 botton-0 left-0 mt-60 opacity-5 absolute" src="./assets/img/path3min.png">
+    <img class="bg-img left-0" src="./assets/img/path3min.png">
     <div class="container h-screen mt-60 lg:mt-24 flex flex-row flex-wrap justify-evenly items-center">
 
-      <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000"
-        class="max-w-sm rounded m-3 flex-col overflow-hidden shadow-lg z-2 ease-in-out duration-300 hover:scale-110 hover:ring-2 hover:ring-bl">
-        <img class="w-20 mx-auto my-7" src="./assets/img/ripp.png" alt="Sunset in the mountains">
+      <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000"
+        class="neon-card hover:ring-bl">
+        <img class="img-nc" src="./assets/img/ripp.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
-          <div class="font-bold text-xl text-bl mb-2">Emerging Crypto Projects</div>
+          <div class="title-nc text-bl">Emerging Crypto Projects</div>
           <p class="text-white text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
             eaque, exercitationem praesentium nihil.
           </p>
         </div>
-        <div class="px-6 py-4 pb-2 m-4 flex justify-center">
+        <div class="div-view">
           <a href="#"
-            class="inline-block text-sm px-4 py-2 leading-none rounded-md text-bl ease-in-out duration-300 border border-bl hover:ring-2 ring-bl mt-4 lg:mt-0">View</a>
+            class="view ring-bl border-bl text-bl">View</a>
         </div>
       </div>
 
       <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000"
-        class="max-w-sm m-3 rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300 hover:ring-2 ring-pink-500">
-        <img class="w-20 mx-auto my-7" src="./assets/img/bitcoin.png" alt="bitcoin">
+        class="neon-card ring-pink-500">
+        <img class="img-nc" src="./assets/img/bitcoin.png" alt="bitcoin">
         <div class="px-6 py-4 text-center ">
-          <div class="font-bold text-xl mb-2 text-pink-500">The Biggest Crypto</div>
+          <div class="title-nc text-pink-500">The Biggest Crypto</div>
           <p class="text-white text-base">
             <span class="card">card</span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
             eaque, exercitationem praesentium nihil.
           </p>
         </div>
-        <div class="px-6 py-4 flex justify-center">
+        <div class="div-view">
           <a href="#"
-            class="inline-block text-sm px-4 py-2 leading-none rounded-md text-pink-500 border border-pink-500 hover:ring-2 ease-in-out duration-300 ring-pink-500 mt-4 lg:mt-0">View</a>
+            class="view text-pink-500 border-pink-500 ring-pink-500">View</a>
         </div>
       </div>
 
       <div data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000"
-        class="max-w-sm m-3 rounded flex flex-col overflow-hidden shadow-lg z-2 hover:scale-105 ease-in-out duration-300  hover:ring-2 hover:ring-grn ">
-        <img class="w-20 mx-auto my-7" src="./assets/img/ethereum.png" alt="Sunset in the mountains">
+        class="neon-card hover:ring-grn ">
+        <img class="img-nc" src="./assets/img/ethereum.png" alt="Sunset in the mountains">
         <div class="px-6 py-4 text-center ">
-          <div class="font-bold text-xl text-grn mb-2">Smart Contracts</div>
+          <div class="title-nc text-grn">Smart Contracts</div>
           <p class="text-white text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
             eaque, exercitationem praesentium nihil.
           </p>
         </div>
-        <div class="px-6 py-4 flex justify-center">
+        <div class="div-view">
           <a href="#"
-            class="inline-block text-sm px-4 py-2 leading-none rounded-md text-grn border ease-in-out duration-300 border-grn hover:ring-2 ring-grn mt-4 lg:mt-0">View</a>
+            class="view ring-grn border-grn text-grn">View</a>
         </div>
       </div>
 
     </div>
 
     <!-- hire me -->
-    <div class="container mt-[48rem] lg:mt-96 flex flex-row flex-wrap justify-between items-center">
-      <div class="container flex flex-col flex-wrap items-center justify-center ">
-        <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
-          class="text-center mx-10 w-full text-4xl text-white font-light">
+    <div class="container mt-[60rem] lg:mt-96 flex flex-row flex-wrap justify-evenly items-center">
+      <div  data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
+      class="max-w-sm flex flex-col flex-wrap items-center justify-center ">
+        <h1 class="text-center mx-10 w-full text-4xl text-white font-light">
           Do you want to work together?, I'm sure we'll do very well.
         </h1>
       </div>
-      <div class="flex flex-col bg-transparent p-5 items-center justify-center drop-shadow-2xl">
-        <div
-          data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000"
-          class="flex items-center justify-center h-screen">
+
+      <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000"
+      class="max-w-sm flex flex-col bg-transparent items-center justify-center drop-shadow-2xl">
+        <div class="flex items-center justify-center p-5 h-screen">
           <div
             class="bg-transparent hover:bg-indigo-900 font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg p-10 max-w-xs">
             <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
