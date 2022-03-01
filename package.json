@@ -9,7 +9,7 @@
     "test": "ng test",
     "build-css": "npx tailwindcss-cli@latest build -i ./src/styles.css -o ./dist/portfolio/styles.css",
     "build-ghp": "ng build --base-href 'https://rigeltoth.github.io/portfolio/'",
-    "deploy-ghp": "npx angular-cli-ghpages --dir=dist/portfolio"
+    "deploy-ghp": "angular-cli-ghpages --dir=dist/portfolio"
   },
   "private": true,
   "dependencies": {
