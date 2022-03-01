@@ -2,15 +2,15 @@
   <img class="opacity-10 sm:h-12 lg:h-screen absolute z-0 mt-32 right-0" src="./assets/img/path3.png">
 
 
-    <div class="container grid grid-cols-2 justify-around items-center" id="contact">
-      <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" class="m-20 swiper mx-auto">
-        <h1 class="text-6xl text-white text-center font-bold mt-20 opacity-70">Skills</h1>
+    <div class="container grid grid-cols-1 lg:grid-cols-2 justify-around items-center">
+      <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" class=" mt-20 swiper mx-auto">
+        <h1 class="text-6xl text-white text-center font-normal lg:font-bold mt-6 opacity-70">Skills</h1>
         <swiper [config]="config" >
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper mt-10">
             <img class="swiper-slide" *ngFor="let img of Imgs" [src]="img.src" [alt]="img.alt" />
           </div>
         </swiper>
-        <h1 class="text-right text-white sm:px-4 lg:px-10 sm:m-2 lg:m-10">
+        <h1 class="text-center w-full text-white m-2 lg:m-10">
           Creation and deployment of SPA applications, using Angular 12+ for the frontend, applying concepts such as
           routing, services, pipes, and Interfaces, connecting to API REST through HttpClient, for styles I can use
           SCSS, Tailwind CCS, Bootstrap 4-5 and Bootswatch, including responsive UI/UX designs <br>
@@ -18,18 +18,18 @@
           databases like MongoDB(including Atlas), or SQL like MySQL </h1>
       </div>
 
-      <div class="bg-transparent mt-4 drop-shadow-2xl">
+      <div class="bg-transparent mx-4 drop-shadow-2xl">
         <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000"
           class="flex items-center justify-center h-screen">
           <div
-            class="bg-transparent font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg py-10 px-20 max-w-xs">
+            class="bg-transparent font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg py-6 px-10 lg:px-20 max-w-xs">
             <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
               alt="product designer">
 
             <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
-            <h3 class="text-sm text-sky-600 mb-6"> Pro Skills</h3>
+            <h3 class="text-sm text-sky-600 mb-8"> Pro Skills</h3>
 
-            <div class="flex justify-between text-sm text-bl mt-2">English Level <span>70%</span></div>
+            <div class="flex justify-between text-sm text-bl ">English Level <span>70%</span></div>
             <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
               <div class="bg-bl h-2 rounded-full" style="width: 70%"></div>
             </div>
