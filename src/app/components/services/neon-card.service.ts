@@ -17,7 +17,7 @@ export class NeonCardService {
     },
     {
       img: './assets/img/bitcoin.png',
-      color: 'pnk',
+      color: 'pink-500',
       index: 1,
       title: 'The Biggest Crypto',
       body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendi eaque, exercitationem praesentium nihil.',
