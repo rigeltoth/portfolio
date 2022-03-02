@@ -7,7 +7,7 @@
       </h1>
     </div>
 
-    <!-- <img class="bg-img center" src="./assets/img/path2min.png"> -->
+    <!-- <img class="bg-img right-0" src="./assets/img/path2min.png"> -->
     <!-- profile-page and landing-page -->
     <div class="container flex flex-row h-96 flex-wrap items-center justify-evenly px-2 lg:px-20">
       <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000"
@@ -37,7 +37,7 @@
     </div>
 
     <!-- neon cards -->
-    <!-- <img class="bg-img left-0" src="./assets/img/path3min.png"> -->
+    <!-- <img class="bg-img h-20 lg:h-96 opacity-5" src="./assets/img/path3min.png"> -->
     <div class="container h-screen mt-60 lg:mt-24 flex flex-row flex-wrap justify-evenly items-center">
      
       <app-neon-card *ngFor="let card of cards" 
@@ -46,7 +46,7 @@
     </div>
 
     <!-- hire me -->
-    <div class="container mt-[60rem] lg:mt-32 grid grid-cols-1 lg:grid-cols-2">
+    <div class="container mt-[60rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-2">
       <div  data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"
       class="flex flex-wrap items-center justify-center ">
         <h1 class="text-center mx-10 w-full text-4xl text-white font-light">
@@ -62,13 +62,13 @@
             <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
               alt="product designer">
             <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
-            <h3 class="text-sm text-sky-600 "> Web Developer </h3>
-            <p class="text-xs text-gray-400 mt-4 mb-6"> I'm a Full Stack MEAN Junior developer,
+            <h3 class="text-sm text-bl "> Web Developer </h3>
+            <p class="text-xs text-blue-200 mt-4 mb-6"> I'm a Full Stack MEAN Junior developer,
               I'm very good at teamwork and fast learning, besides i'm a physical engineering student,
               so I have knowledge in advanced calculus, chemistry, physics, robotics, english and much more </p>
-            <a href="https://wa.me/573216233719?text=Hi%20Ron!,%20let's%20work%20together" target="_blank"
-              class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-bl ease-in-out duration-300 hover:text-bl hover:bg-transparent hover:scale-110 hover:ring-2 lg:mt-0">HIRE
-              ME</a>
+            <a [routerLink]="['/profile']"
+              class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-bl ease-in-out duration-300 hover:text-bl hover:bg-transparent hover:scale-110 hover:ring-2 lg:mt-0">
+            Profile</a>
           </div>
         </div>
       </div>

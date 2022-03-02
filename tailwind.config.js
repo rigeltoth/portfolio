@@ -11,7 +11,7 @@ module.exports = {
         'ndg': '#171941',
         'pnk': '#e14eca',
         'prpl': '#ba54f5',
-        'rng': '#ff8d72',
+        'rng': 'orange-500',
         'pct': '#344675',
         'grn': '#00f2c3',
       }

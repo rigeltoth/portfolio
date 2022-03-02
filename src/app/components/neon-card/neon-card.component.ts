@@ -14,7 +14,8 @@ export class NeonCardComponent implements OnInit {
     index: 0,
     title: '',
     body: '',
-    animation: ''
+    animation: '',
+    link: ''
   }
 
   constructor() { }
@@ -26,15 +27,20 @@ export class NeonCardComponent implements OnInit {
   cardColor(){
     const bgClass = "hover:ring-".concat(this.config.color)
     const textClass = "text-".concat(this.config.color)
+    // console.log(textClass)
     const ringClass = "ring-".concat(this.config.color)
+    // console.log(ringClass)
     const borderClass = "border-".concat(this.config.color)
-
+    // console.log(borderClass)    
     const bg = document.getElementsByName('bg-nc')
     const title = document.getElementsByName('title-nc')
     const view = document.getElementsByName('view')
 
-    bg[this.config.index]?.classList.add(bgClass)
-    title[this.config.index]?.classList.add(textClass)
+
+    bg[this.config.index]?.classList.toggle(bgClass)
+    console.log(bgClass)
+    console.log(bg)
+    title[this.config.index]?.classList.toggle(textClass)
     view[this.config.index]?.classList.add(ringClass, borderClass, textClass)
   }
 }

@@ -5,4 +5,5 @@ export interface NeonCardModel {
     title: string
     body: string
     animation: string
+    link: string
 }
