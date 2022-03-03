@@ -6,5 +6,19 @@
   z-index: 4;
 }
 
+.swiper {
+  padding-bottom: 50px;
+}
 
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 10%;
+}
 
