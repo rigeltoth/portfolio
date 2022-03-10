@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-landing',
@@ -43,6 +45,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    AOS.init()
   }
 
 }
