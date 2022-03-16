@@ -7,14 +7,14 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3 mt-20 lg:mt-32 mx-2 xs:mx-8 lg:mx-20 xl:mx-32 justify-items-center">
 
         <div data-aos="zoom-in" data-aos-easing="ease-in-out"
-        class="bg-transparent grid grid-col sm:col-span-2 sm:w-1/2 lg:w-full my-0 lg:my-auto lg:h-1/2 lg:col-span-1 lg:row-span-2
+        class="bg-transparent grid sm:col-span-2 sm:w-1/2 lg:w-full my-0 lg:my-auto lg:h-1/2 lg:col-span-1 lg:row-span-2
           card hover:bg-pct hover:shadow-pct hover:shadow-2xl">
           <div class=" text-4xl text-bl text-center pt-6">Amazing Design <i class="fas fa-palette text-2xl"></i></div>
           <div class=" text-xl text-white text-center p-3 ">With tools like Bootstrap 5, Bootswatch, SASS, SCSS, and Tailwind and others, we'll create the best, colorful, innovative and responsive webapp ever</div>
         </div>
 
         <div data-aos="fade-down-right" data-aos-easing="ease-in-out"
-          class="bg-transparent grid grid-col card hover:bg-pink-500 hover:shadow-pink-500 hover:shadow-2xl">
+          class="bg-transparent grid card hover:bg-pink-500 hover:shadow-pink-500 hover:shadow-2xl">
           <div class=" text-4xl text-white text-center pt-6">Quality <i class="fas fa-clipboard-check text-2xl"></i></div>
           <div class=" text-xl text-white text-center p-3">I dedicate each day of my life learning new things and always preparing myself, to always improve the quality of my job and user satisfaction</div>
           <span class="m-auto text-pink-500 text-lg hidden lg:flex">Hover me</span>
@@ -22,7 +22,7 @@
         </div>
 
         <div  data-aos="fade-down-left" data-aos-easing="ease-in-out"
-          class="bg-transparent grid grid-col card hover:bg-grn hover:shadow-grn hover:shadow-2xl">
+          class="bg-transparent grid card hover:bg-grn hover:shadow-grn hover:shadow-2xl">
           <div class=" text-4xl text-white text-center pt-6">Comunication<i class="fas fa-comments text-2xl"></i>
           </div>
           <div class="text-xl text-white text-center p-3">Communication and teamwork are fundamentals for successful projects, I'm always willing to dialogue with my partners to find the most optimal solutions</div>
@@ -31,7 +31,7 @@
         </div>
 
         <div data-aos="fade-up-right" data-aos-easing="ease-in-out"
-          class="bg-transparent grid grid-col card hover:bg-bl hover:shadow-bl hover:shadow-2xl">
+          class="bg-transparent grid card hover:bg-bl hover:shadow-bl hover:shadow-2xl">
           <div class=" text-4xl text-white text-center pt-6">UX/UI <i class="fas fa-user-check text-2xl"></i></div>
           <div class="text-xl text-white text-center  p-5">Knowing and applying UX/UI concepts is essential for an application to be intuitive, friendly and, above all, to get the user to connect with your company.</div>
           <span class="m-auto text-bl text-lg hidden lg:flex">Hover me</span>
@@ -39,7 +39,7 @@
         </div>
 
         <div data-aos="fade-up-left" data-aos-easing="ease-in-out"
-          class="bg-transparent grid grid-col card hover:bg-prpl hover:shadow-prpl hover:shadow-2xl">
+          class="bg-transparent grid card hover:bg-prpl hover:shadow-prpl hover:shadow-2xl">
           <div class=" text-4xl text-white text-center pt-6">Full Job <i class="fas fa-rocket text-2xl"></i></div>
           <div class=" text-xl text-white text-center  p-5">A process that goes through all the parts of the proyect in a very professional way, frontend, backend, database, hosting and everything in one place</div>
           <span class="m-auto text-prpl text-lg hidden lg:flex">Hover me</span>
@@ -49,30 +49,20 @@
       </div>
 
     <!-- hire me -->
-  <div class="flex flex-row flex-wrap justify-between items-center mt-32">
+  <div class="grid grid-cols-1 md:grid-cols-2 my-32 justify-items-center mx-3">
     <div data-aos="zoom-in" data-aos-easing="ease-in-out"
-    class="flex flex-col w-full lg:w-2/5 m-auto">
-      <h1 class="text-center text-4xl text-white mx-4 sm:mx-24">
+    class="flex items-center justify-center">
+      <h1 class="text-center text-3xl sm:text-4xl text-white mx-4 sm:mx-16">
         What you're waiting for?, let's create our dreams.
       </h1>
     </div>
-    <div class="flex flex-col bg-transparent p-5 m-auto drop-shadow-2xl">
-      <div data-aos="fade-left" data-aos-easing="ease-in-out"
-      class="flex items-center justify-center h-screen">
-        <div
-          class="bg-transparent hover:bg-indigo-900 font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg p-10 max-w-xs">
-          <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
-            alt="product designer">
-          <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
-          <h3 class="text-sm text-sky-600 "> Web Developer </h3>
-          <p class="text-xs text-gray-400 mt-4 mb-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <a routerLink="/profile"
-            class="inline-block text-sm px-4 py-3 mt-4 leading-none border rounded-full text-white border-bl ease-in-out duration-300 hover:text-bl hover:bg-transparent hover:scale-110 hover:ring-2 lg:mt-0">Profile</a>
+    <div class="flex flex-col md:mx-32 mt-20 w-full sm:w-3/4">
+      <swiper [config]="config" >
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" *ngFor="let img of Imgs" [src]="img.src" [alt]="img.alt" />
         </div>
-      </div>
+      </swiper>
     </div>
   </div>
-
 
 </div>

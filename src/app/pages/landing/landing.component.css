@@ -8,3 +8,18 @@
 .card{
   @apply rounded-lg p-3;
 }
+
+
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 10%;
+}

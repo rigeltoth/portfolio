@@ -10,7 +10,7 @@ export class NeonCardService {
    
     {
       img: './assets/imgwt/ng.png',
-      color: 'bl',
+      color: "bl",
       index: 0,
       title: 'Angular 13 CLI',
       body: 'Experience developing SPA web apps using concepts such as Lazy loading, routing, services, pipes, connecting with REST APIs - Get Post Delete Update, authorization authentication and much more',
@@ -19,7 +19,7 @@ export class NeonCardService {
     },
     {
       img: './assets/imgwt/nodejs.png',
-      color: 'grn',
+      color: "grn",
       index: 1,
       title: 'Node Js',
       body: 'Experience in REST API backend development, using tools like Rxjs, express, json web token, middlewares, controllers, routes, babel, typescript, connecting to databases like Mongodb or MySQL and much more.',
@@ -28,7 +28,7 @@ export class NeonCardService {
     },
     {
       img: './assets/imgwt/github.png',
-      color: 'bl',
+      color: "bl",
       index: 2,
       title: 'Git & GitHub',
       body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',

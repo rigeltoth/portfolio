@@ -1,6 +1,5 @@
-.bg-dots {
-  background-image: url('../../../assets/img/dots.png');
-  background-size: 10rem;
+.bg-lights {
+  background-image: url('../../../assets/imgLanding/lights.jpg');
 }
 .z-2{
   z-index: 4;
