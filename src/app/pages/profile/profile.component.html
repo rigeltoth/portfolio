@@ -1,61 +1,142 @@
 <div class="bg-gradient-to-r from-ndg to-indigo-900 overflow-hidden">
-  <img class="opacity-10 sm:h-12 lg:h-screen absolute z-0 mt-32 right-0" src="./assets/img/path3.png">
+  <img
+    class="opacity-10 sm:h-12 lg:h-72 absolute z-0 mt-32 right-0"
+    src="./assets/img/path3.png"
+  />
 
-
-  <div class="container grid grid-cols-1 lg:grid-cols-2 justify-around items-center">
-    <div data-aos="zoom-in" data-aos-easing="linear" class=" mt-20 swiper w-full lg:w-3/4 mx-auto">
-      <h1 class="text-6xl text-white text-center font-normal lg:font-bold mt-6 opacity-70">Skills</h1>
-      <swiper [config]="config" >
+  <div
+    class="container grid grid-cols-1 lg:grid-cols-2 justify-around items-center"
+  >
+    <div
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      class="mt-20 swiper w-full lg:w-3/4 mx-auto"
+    >
+      <h1
+        class="text-6xl text-white text-center font-normal lg:font-bold mt-6 opacity-70"
+      >
+        Skills
+      </h1>
+      <swiper [config]="config">
         <div class="swiper-wrapper mt-10">
-          <img class="swiper-slide" *ngFor="let img of Imgs" [src]="img.src" [alt]="img.alt" />
+          <img
+            class="swiper-slide"
+            *ngFor="let img of Imgs"
+            [src]="img.src"
+            [alt]="img.alt"
+          />
         </div>
       </swiper>
       <h1 class="text-center w-full text-blue-200 px-4 pt-6 lg:mx-10">
-        Creation and deployment of SPA applications, using Angular 13, applying concepts such as
-        routing, services, pipes, interfaces and connecting to API REST through HttpClient, knowing
-        SCSS, Tailwind, Bootstrap 4-5 and Bootswatch, including responsive UI/UX designs <br><br>
-        For the NodeJs Backend, using RxJs, Express and some Middlewares like morgan, I can communicate to NoSQL
-        databases like MongoDB, or SQL like MySQL </h1>
+        Creation and deployment of SPA applications, using Angular 13, applying
+        concepts such as routing, services, pipes, interfaces and connecting to
+        API REST through HttpClient, knowing SCSS, Tailwind, Bootstrap 4-5 and
+        Bootswatch, including responsive UI/UX designs <br /><br />
+        For the NodeJs Backend, using RxJs, Express and some Middlewares like
+        morgan, I can communicate to NoSQL databases like MongoDB, or SQL like
+        MySQL
+      </h1>
     </div>
 
     <div class="bg-transparent drop-shadow-2xl">
-      <div data-aos="fade-left" data-aos-easing="ease-in-out" 
-        class="flex items-center justify-center h-screen">
+      <div
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        class="flex items-center justify-center h-screen"
+      >
         <div
-          class="bg-transparent font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg py-6 px-10 lg:px-20">
-          <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="./assets/img/profile-pic.jpg"
-            alt="product designer">
+          class="bg-transparent font-semibold text-center rounded-3xl border-2 border-bl hover:ring-2 shadow-lg py-6 px-10 lg:px-20"
+        >
+          <img
+            class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
+            src="./assets/img/profile-pic.jpg"
+            alt="product designer"
+          />
 
-          <h1 class="text-lg text-white"> Ronnovič Rigel Toth </h1>
-          <h3 class="text-sm text-sky-600 mb-8"> Pro Skills</h3>
+          <h1 class="text-lg text-white">Ronnovič Rigel Toth</h1>
+          <h3 class="text-sm text-sky-600 mb-8">Pro Skills</h3>
 
-          <div class="flex justify-between text-sm text-bl ">English Level <span>70%</span></div>
+          <div class="flex justify-between text-sm text-bl">
+            English Level <span>70%</span>
+          </div>
           <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
             <div class="bg-bl h-2 rounded-full" style="width: 70%"></div>
           </div>
 
-          <div class="flex justify-between text-sm text-pink-500 mt-2">Fast Learning <span>90%</span></div>
+          <div class="flex justify-between text-sm text-pink-500 mt-2">
+            Fast Learning <span>90%</span>
+          </div>
           <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
             <div class="bg-pink-600 h-2 rounded-full" style="width: 90%"></div>
           </div>
 
-          <div class="flex justify-between text-sm text-grn mt-2">TeamWork <span>95%</span></div>
+          <div class="flex justify-between text-sm text-grn mt-2">
+            TeamWork <span>95%</span>
+          </div>
           <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
             <div class="bg-grn h-2 rounded-full" style="width: 95%"></div>
           </div>
 
-          <a href="https://wa.me/573216233719?text=Hi%20Ron!,%20let's%20work%20together" target="_blank"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-bl hover:border-bl hover:text-bl hover:bg-transparent hover:ring-2 ease-in-out duration-300 hover:scale-110 mt-4 lg:mt-0">Contact</a>
+          <a
+            href="https://wa.me/573216233719?text=Hi%20Ron!,%20let's%20work%20together"
+            target="_blank"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-bl hover:border-bl hover:text-bl hover:bg-transparent hover:ring-2 ease-in-out duration-300 hover:scale-110 mt-4 lg:mt-0"
+            >Contact</a
+          >
         </div>
       </div>
     </div>
   </div>
 
-  <div class="bg-lights flex items-center justify-center h-32">
-    <h1 class="text-white text-2xl text-center">Got a question? <br/>
-    <span class="text-white text-center text-lg">I'd like to talk more about  what you need.</span>
-  </h1>
+  <div
+    class="bg-gradient-to-r from-ndg via-pink-500 to-indigo-900 flex items-center justify-center h-32 mt-10"
+  >
+    <h1 class="text-white text-2xl text-center">
+      Got a question? <br />
+      <span class="text-white text-center text-lg"
+        >I'd like to talk more about what you need.</span
+      >
+    </h1>
   </div>
 
+  <div class="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-10">
+    <div
+      class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b xl:border-none"
+    >
+      <i class="fa-solid fa-location-dot text-4xl text-pnk"></i><br />
+      <h1 class="text-bold text-white text-2xl text-center">
+        Location <br />
+        <span class="text-light text-xl text-gray-400">Popayán CO</span>
+      </h1>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b xl:border-none"
+    >
+      <i class="fa-solid fa-envelope text-4xl text-bl"></i><br />
+      <h1 class="text-bold text-white text-2xl text-center">
+        Email <br />
+        <span class="text-light text-xl text-gray-400"
+          >rigel.toth@gmail.com</span
+        >
+      </h1>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b md:border-none"
+    >
+      <i class="fa-solid fa-mobile-button text-4xl text-pink-500"></i><br />
+      <h1 class="text-bold text-white text-2xl text-center">
+        Phone Number <br />
+        <span class="text-light text-xl text-gray-400">(+57)321 623 3719</span>
+      </h1>
+    </div>
+    <div class="flex flex-col items-center justify-center h-52 w-3/4 m-auto">
+      <i class="fa-solid fa-user-astronaut text-4xl text-grn"></i><br />
+      <h1 class="text-bold text-white text-2xl text-center">
+        Contact <br />
+        <span class="text-light text-xl text-gray-400"
+          >Ronnovič Rigel Toth</span
+        >
+      </h1>
+    </div>
+  </div>
 </div>
-
