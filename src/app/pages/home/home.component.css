@@ -12,9 +12,9 @@
   @apply bg-gradient-to-r from-ndg to-indigo-900  overflow-hidden;
 }
 
-/* .bg-img{
-  @apply z-0 h-48 sm:h-48 lg:h-96 mt-10 opacity-5 absolute;
-} */
+.bg-img{
+  @apply z-0 h-48 sm:h-48 lg:h-96 mt-5 opacity-5 absolute;
+}
 
 /* profile and landing page */
 
