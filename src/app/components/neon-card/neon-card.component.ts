@@ -4,7 +4,7 @@ import { NeonCardModel } from '../models/neon-card.model';
 @Component({
   selector: 'app-neon-card',
   templateUrl: './neon-card.component.html',
-  styleUrls: ['./neon-card.component.css']
+  styleUrls: ['./neon-card.component.scss']
 })
 export class NeonCardComponent implements OnInit {
 

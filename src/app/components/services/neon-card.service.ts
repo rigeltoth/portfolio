@@ -10,6 +10,7 @@ export class NeonCardService {
    
     {
       img: './assets/imgwt/ng.png',
+      alt: '',
       color: "bl",
       index: 0,
       title: 'Angular 13 CLI',
@@ -19,6 +20,7 @@ export class NeonCardService {
     },
     {
       img: './assets/imgwt/nodejs.png',
+      alt: '',
       color: "grn",
       index: 1,
       title: 'Node Js',
@@ -28,6 +30,7 @@ export class NeonCardService {
     },
     {
       img: './assets/imgwt/github.png',
+      alt: '',
       color: "bl",
       index: 2,
       title: 'Git & GitHub',
