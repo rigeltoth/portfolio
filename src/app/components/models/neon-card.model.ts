@@ -1,6 +1,6 @@
 export interface NeonCardModel {
     img: string
-    alt: string
+    alt?: string
     color: string
     index: number
     title: string

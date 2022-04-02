@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, QueryList, Renderer2, ViewChild } from '@angular/core';
 import { NeonCardModel } from '../models/neon-card.model';
 
 @Component({
@@ -7,6 +7,9 @@ import { NeonCardModel } from '../models/neon-card.model';
   styleUrls: ['./neon-card.component.scss']
 })
 export class NeonCardComponent implements OnInit {
+
+  @ViewChild('card') public ncard!: ElementRef
+  @ViewChild('titlenc') public titlenc!: ElementRef
 
   @Input() config: NeonCardModel = {
     img: '',
@@ -18,28 +21,32 @@ export class NeonCardComponent implements OnInit {
     link: ''
   }
 
-  constructor() { }
+  bgClass: string = ''
+
+  constructor(
+    private render: Renderer2
+  ) { }
 
   ngOnInit(): void {
     this.cardColor()
   }
 
   cardColor(){
-    const bgClass = "hover:ring-".concat(this.config.color)
-    const textClass = "text-".concat(this.config.color)
-    const ringClass = "ring-".concat(this.config.color)
-    const borderClass = "border-".concat(this.config.color)
+    this.bgClass = "hover:ring-".concat(this.config.color)
+    // const textClass = "text-".concat(this.config.color)
+    // const ringClass = "ring-".concat(this.config.color)
+    // const borderClass = "border-".concat(this.config.color)
 
-    const bg = document.getElementsByName('bg-nc')
+
+
+    
+/*  const bg = document.getElementsByName('bg-nc')
+
     const title = document.getElementsByName('title-nc')
-    const view = document.getElementsByName('view')
+    const view = document.getElementsByName('view') */
 
-    console.log(view[this.config.index])
-    console.log(textClass)
-
-
-    bg[this.config.index]?.classList.add(bgClass)
-    title[this.config.index]?.classList.add(textClass)
-    view[this.config.index]?.classList.add(ringClass, borderClass, textClass)
+    // bg[this.config.index]?.classList.add(bgClass)
+    // title[this.config.index]?.classList.add(textClass)
+    // view[this.config.index]?.classList.add(ringClass, borderClass, textClass)
   }
 }

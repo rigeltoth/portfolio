@@ -10,7 +10,7 @@ export class NeonCardService {
    
     {
       img: './assets/imgwt/ng.png',
-      alt: '',
+      // alt: '',
       color: "bl",
       index: 0,
       title: 'Angular 13 CLI',
@@ -20,7 +20,7 @@ export class NeonCardService {
     },
     {
       img: './assets/imgwt/nodejs.png',
-      alt: '',
+      // alt: '',
       color: "grn",
       index: 1,
       title: 'Node Js',
@@ -30,8 +30,8 @@ export class NeonCardService {
     },
     {
       img: './assets/imgwt/github.png',
-      alt: '',
-      color: "bl",
+      // alt: '',
+      color: "pink-500",
       index: 2,
       title: 'Git & GitHub',
       body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
