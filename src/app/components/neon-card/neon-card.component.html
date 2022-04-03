@@ -1,7 +1,7 @@
 
 <div class="neon-card" #card
   data-aos="fade-left" data-aos-easing="ease-in-out" >
-  <img class="img-nc" src="{{config.img}}" alt="">
+  <img class="img-nc" [src]="config.img" alt="">
   <div class="px-6 py-4 text-center ">
       <div class="title-nc " name="title-nc" #titlenc>{{config.title}}</div>
       <p class="text-white text-base">
@@ -9,7 +9,7 @@
       </p>
   </div>
   <div class="div-view" >
-      <a href="{{config.link}}" target="_blank" name="view" class="view">View</a>
+      <a href="{{config.link}}" target="_blank" class="view border" #viewnc>View</a>
   </div>
 </div>
 

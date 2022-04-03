@@ -31,7 +31,7 @@ export class ProfileComponent implements OnInit {
       src: './assets/imgwt/github.png',
       alt: 'GitHub'
     }, {
-      src: './assets/imgwt/bootstrap4.png',
+      src: './assets/imgwt/bootstrap.png',
       alt: 'Bootstrap'
     }, {
       src: './assets/imgwt/js.png',

@@ -7,7 +7,7 @@ import { NeonCardModel } from '../models/neon-card.model';
 export class NeonCardService {
 
   cards: NeonCardModel[] = [
-   
+
     {
       img: './assets/imgwt/ng.png',
       // alt: '',
@@ -31,13 +31,43 @@ export class NeonCardService {
     {
       img: './assets/imgwt/github.png',
       // alt: '',
-      color: "pink-500",
+      color: "prpl",
       index: 2,
       title: 'Git & GitHub',
       body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
       animation: 'fade-right',
       link: 'https://git-scm.com/'
-    },    
+    },
+   /*  {
+      img: './assets/imgwt/bootstrap.png',
+      // alt: '',
+      color: "prpl",
+      index: 3,
+      title: 'Bootstrap',
+      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
+      animation: 'fade-right',
+      link: 'https://git-scm.com/'
+    },
+    {
+      img: './assets/imgwt/rxjs.png',
+      // alt: '',
+      color: "pnk",
+      index: 4,
+      title: 'Reactive Js',
+      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
+      animation: 'fade-right',
+      link: 'https://git-scm.com/'
+    },
+    {
+      img: './assets/imgwt/mysql.png',
+      // alt: '',
+      color: "bl",
+      index: 5,
+      title: 'Git & GitHub',
+      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
+      animation: 'fade-right',
+      link: 'https://git-scm.com/'
+    }, */
   ]
   constructor() {}
 

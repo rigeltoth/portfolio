@@ -1,4 +1,4 @@
-@tailwind components;   
+@tailwind components;
 
 @layer components{
   .neon-card{
@@ -14,7 +14,7 @@
       @apply px-6 py-4 pb-2 m-4 flex justify-center;
     }
     .view{
-      @apply inline-block text-sm px-4 py-2 leading-none rounded-md border hover:ring-2 ease-in-out duration-300 mt-4 lg:mt-0;
+      @apply inline-block text-sm px-4 py-2 leading-none rounded-md hover:ring-2 ease-in-out duration-300 mt-4 lg:mt-0;
     }
 }
 
