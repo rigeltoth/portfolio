@@ -4,8 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .tryc{
-        @apply mt-2
-    }
+::-webkit-scrollbar {
+    width: 0.7em;
+}
+::-webkit-scrollbar-track {
+    background: rgba($color: #0b58a4, $alpha: 1.0);
+    padding-top: 2rem;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba($color: #171941, $alpha: .9);
+    border: .1rem solid #1d8cf8;
+    border-radius: 2rem;
+    height: 4rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($color: #202367, $alpha: .9);
 }

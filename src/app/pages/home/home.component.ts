@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit, QueryList, Renderer2, ViewChildren } from '@angular/core';
 import * as AOS from 'aos';
+import { AnimationOptions } from 'ngx-lottie';
 import { NeonCardModel } from 'src/app/components/models/neon-card.model';
 import { NeonCardComponent } from 'src/app/components/neon-card/neon-card.component';
 import { NeonCardService } from 'src/app/components/services/neon-card.service';
@@ -10,6 +11,10 @@ import { NeonCardService } from 'src/app/components/services/neon-card.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+
+  options: AnimationOptions = {
+    path: './assets/lottiejson/astronautReadingBook.json'
+  }
 
   @ViewChildren(NeonCardComponent) VCNneonCard!: QueryList<NeonCardComponent>
   cards: NeonCardModel[] = []
@@ -42,7 +47,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         if (e.index === index){
           this.render.addClass(el.ncard.nativeElement, "hover:ring-".concat(e.color))
           this.render.addClass(el.titlenc.nativeElement, "text-".concat(e.color))
-          const classes = 'border- text- hover:ring-'
+          const classes = 'border- text-'
           classes.split(' ').forEach((cls: string) => {
             this.render.addClass(el.viewnc.nativeElement, cls.concat(e.color))
           })

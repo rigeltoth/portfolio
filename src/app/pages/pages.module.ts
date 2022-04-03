@@ -1,13 +1,20 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
+import { PagesRoutingModule } from './pages-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 
-import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { ComponentsModule } from '../components/components.module';
+
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -20,6 +27,7 @@ import { ComponentsModule } from '../components/components.module';
     PagesRoutingModule,
     ComponentsModule,
     NgxUsefulSwiperModule,
+    LottieModule.forRoot({ player: playerFactory })
   ]
 })
 export class PagesModule { }

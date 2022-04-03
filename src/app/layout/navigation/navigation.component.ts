@@ -15,10 +15,6 @@ export class NavigationComponent implements OnInit {
     // this.changeNavbarColorOnScroll()
   }
 
-  /* const classToggle = (el, ...args) => {
-  args.map(e => el.classList.toggle(e))
-} */
-
   changeNavbarColorOnScroll(){
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('nav')
@@ -37,4 +33,5 @@ export class NavigationComponent implements OnInit {
     const menu = document.querySelector('#menu')
     menu?.classList.add("hidden")
   }
+ 
 }

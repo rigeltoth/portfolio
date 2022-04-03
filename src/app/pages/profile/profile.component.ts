@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimationOptions } from 'ngx-lottie';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -7,6 +8,19 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+
+  locationOptions: AnimationOptions = {
+    path: './assets/lottiejson/location.json'
+  }
+  emailOptions: AnimationOptions = {
+    path: './assets/lottiejson/email.json'
+  }
+  phoneOptions: AnimationOptions = {
+    path: './assets/lottiejson/phone.json'
+  }
+  contactOptions: AnimationOptions = {
+    path: './assets/lottiejson/contact.json'
+  }
 
   Imgs = [
     {
@@ -76,13 +90,5 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.changeNavbarColorOnScroll()
-  }
-
-  changeNavbarColorOnScroll() {
-    window.addEventListener('scroll', () => {
-      var nav = document.querySelector('nav');
-      nav?.classList.toggle('bg-indigo-900', window.scrollY > 0)
-    })
   }
 }

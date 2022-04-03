@@ -88,10 +88,12 @@
     </div>
   </div>
 
+  <!-- Studies -->
   <div>
-        
+
   </div>
 
+  <!-- Got a question -->
   <div
     class="bg-gradient-to-r from-ndg via-pink-500 to-indigo-900 flex items-center justify-center h-32 mt-10"
   >
@@ -104,42 +106,35 @@
   </div>
 
   <div class="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-10 mx-auto">
-    <div
-      class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b xl:border-none"
-    >
-      <i class="fa-solid fa-location-dot text-4xl text-pnk"></i><br />
+    <div class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b xl:border-none">
+      <ng-lottie [options]="locationOptions" class="h-28"></ng-lottie>
       <h1 class="text-bold text-white text-2xl text-center">
         Location <br />
         <span class="text-light text-xl text-gray-400">Popayán CO</span>
       </h1>
     </div>
-    <div
-      class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b xl:border-none"
-    >
-      <i class="fa-solid fa-envelope text-4xl text-bl"></i><br />
+    
+    <div class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b xl:border-none">
+      <ng-lottie [options]="emailOptions" class="h-32"></ng-lottie>
       <h1 class="text-bold text-white text-2xl text-center">
         Email <br />
-        <span class="text-light text-xl text-gray-400"
-          >rigel.toth@gmail.com</span
-        >
+        <span class="text-light text-xl text-gray-400">rigel.toth@gmail.com</span>
       </h1>
     </div>
-    <div
-      class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b md:border-none"
-    >
-      <i class="fa-solid fa-mobile-button text-4xl text-pink-500"></i><br />
+    
+    <div class="flex flex-col items-center justify-center h-52 w-3/4 m-auto border-b md:border-none">
+      <ng-lottie [options]="phoneOptions" class="h-28"></ng-lottie>
       <h1 class="text-bold text-white text-2xl text-center">
         Phone Number <br />
         <span class="text-light text-xl text-gray-400">(+57)321 623 3719</span>
       </h1>
     </div>
+    
     <div class="flex flex-col items-center justify-center h-52 w-3/4 m-auto">
-      <i class="fa-solid fa-user-astronaut text-4xl text-grn"></i><br />
+      <ng-lottie [options]="contactOptions" class="h-28"></ng-lottie>
       <h1 class="text-bold text-white text-2xl text-center">
         Contact <br />
-        <span class="text-light text-xl text-gray-400"
-          >Ronnovič Rigel Toth</span
-        >
+        <span class="text-light text-xl text-gray-400">Ronnovič Rigel Toth</span>
       </h1>
     </div>
   </div>
