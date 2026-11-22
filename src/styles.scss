@@ -26,7 +26,7 @@ html.light {
   color-scheme: light;
 
   // page, nav and footer backgrounds (utility classes and the @apply'd .backgroung)
-  .from-ndg, .backgroung {
+  .from-ndg:not(.via-pink-500), .backgroung {
     --tw-gradient-from: #f8fafc var(--tw-gradient-from-position);
     --tw-gradient-to: #e0e7ff var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
