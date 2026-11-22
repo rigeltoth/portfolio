@@ -1,3 +1,4 @@
+import { TPipe } from '../prefs';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NeonCardComponent } from './neon-card/neon-card.component';
@@ -10,6 +11,7 @@ import { NeonCardComponent } from './neon-card/neon-card.component';
   ],
   imports: [
     CommonModule,
+    TPipe
   ],
   exports: [
     NeonCardComponent

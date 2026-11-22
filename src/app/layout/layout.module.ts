@@ -1,3 +1,4 @@
+import { TPipe } from '../prefs';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -16,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule,
     LayoutRoutingModule,
     RouterModule,
+    TPipe
   ],
   exports: [
     NavigationComponent,

@@ -20,3 +20,40 @@
 ::-webkit-scrollbar-thumb:hover {
     background: rgba($color: #202367, $alpha: .9);
 }
+/* ---------- Light theme ----------
+   The site is designed dark; html.light (set by PrefsService) remaps the dark utilities. */
+html.light {
+  color-scheme: light;
+
+  // page, nav and footer backgrounds (utility classes and the @apply'd .backgroung)
+  .from-ndg, .backgroung {
+    --tw-gradient-from: #f8fafc var(--tw-gradient-from-position);
+    --tw-gradient-to: #e0e7ff var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  .backgroung { background-image: linear-gradient(to right, #f8fafc, #e0e7ff); }
+
+  // text
+  .text-white, .alink, .pref-btn { color: #0f172a; }
+  .alink.active, .alink:hover { color: #1d8cf8; }
+  .text-grn { color: #059669; }
+  .border-grn { border-color: #059669; }
+  .text-blue-200, .text-blue-100, .text-gray-400 { color: #475569; }
+  .opacity-70 { opacity: .85; }
+
+  // keep white text on solid colored fills
+  .bg-bl.text-white, .bg-gradient-to-r.via-pink-500 .text-white, .bg-gradient-to-r.via-pink-500 { color: #fff; }
+
+  // subtle borders/fills that were white-on-dark
+  .border-white\/15, .border-white\/10 { border-color: rgb(15 23 42 / .12); }
+  .bg-white\/5 { background-color: rgb(15 23 42 / .04); }
+  .hover\:bg-indigo-900:hover { background-color: #eef2ff; }
+  .neon-card, .card { background-color: rgb(255 255 255 / .6); }
+
+  // logos recolored white for the dark carousel
+  img[src*="github.svg"] { filter: invert(1); }
+  img[src*="amazonwebservices.svg"] { filter: invert(1) hue-rotate(180deg); }
+
+  ::-webkit-scrollbar-track { background: #c7d2fe; }
+  ::-webkit-scrollbar-thumb { background: #e0e7ff; }
+}

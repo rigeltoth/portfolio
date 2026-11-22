@@ -3,13 +3,13 @@
   data-aos="fade-left" data-aos-easing="ease-in-out" >
   <img class="img-nc" [src]="config.img" alt="">
   <div class="px-6 py-4 text-center ">
-      <div class="title-nc " name="title-nc" #titlenc>{{config.title}}</div>
+      <div class="title-nc " name="title-nc" #titlenc>{{ config.title | t }}</div>
       <p class="text-white text-base">
-          {{config.body}}
+          {{ config.body | t }}
       </p>
   </div>
   <div class="div-view" >
-      <a href="{{config.link}}" target="_blank" class="view border border-bl" #viewnc>View</a>
+      <a href="{{config.link}}" target="_blank" class="view border border-bl" #viewnc>{{ 'card.view' | t }}</a>
   </div>
 </div>
 

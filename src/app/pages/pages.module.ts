@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { TPipe } from '../prefs';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { HomeComponent } from './home/home.component';
@@ -20,7 +21,8 @@ import { LottieComponent } from 'ngx-lottie';
     CommonModule,
     PagesRoutingModule,
     ComponentsModule,
-    LottieComponent
+    LottieComponent,
+    TPipe
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

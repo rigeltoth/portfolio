@@ -9,3 +9,7 @@
   @apply block mt-4 lg:inline-block lg:mt-0 text-bl font-semibold  mr-4;
 }
 
+
+.pref-btn{
+  @apply flex items-center justify-center h-9 min-w-[2.25rem] px-2 rounded-full border border-bl/60 text-sm font-medium text-white hover:bg-bl/20 ease-in-out duration-300;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { PrefsService } from '../../prefs';
 
 @Component({
   standalone: false,
@@ -9,7 +10,7 @@ import * as AOS from 'aos';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public prefs: PrefsService) { }
 
   ngOnInit(): void {
     AOS.init()

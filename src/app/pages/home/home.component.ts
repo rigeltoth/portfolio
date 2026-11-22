@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   @ViewChildren(NeonCardComponent) VCNneonCard!: QueryList<NeonCardComponent>
   cards: NeonCardModel[] = []
-  heroTags = ['Angular', 'TypeScript', 'Python', 'Java', 'Azure AI Foundry', 'LLM Agents']
+  heroTags = ['Angular', 'TypeScript', 'Python', 'Java', 'Azure AI Foundry', 'tag.agents']
   constructor(
     private neonCardService: NeonCardService,
     private render: Renderer2

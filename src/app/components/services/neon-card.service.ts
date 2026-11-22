@@ -11,8 +11,8 @@ export class NeonCardService {
       img: './assets/tech/angular.svg',
       color: "bl",
       index: 0,
-      title: 'Frontend',
-      body: 'SPAs in Angular, React and Next.js with TypeScript: lazy loading, routing, state with RxJS, REST integrations, auth flows and responsive UI with Tailwind.',
+      title: 'card.fe.title',
+      body: 'card.fe.body',
       animation: 'fade-right',
       link: 'https://angular.dev/'
     },
@@ -20,8 +20,8 @@ export class NeonCardService {
       img: './assets/tech/python.svg',
       color: "grn",
       index: 1,
-      title: 'Backend',
-      body: 'APIs with Python (FastAPI), Node.js (NestJS, Express) and Java (Spring Boot, WebFlux), backed by PostgreSQL, Redis and MongoDB, shipped with Docker and CI/CD.',
+      title: 'card.be.title',
+      body: 'card.be.body',
       animation: 'fade-left',
       link: 'https://fastapi.tiangolo.com/'
     },
@@ -29,8 +29,8 @@ export class NeonCardService {
       img: './assets/tech/azure.svg',
       color: "prpl",
       index: 2,
-      title: 'AI Agents & LLMs',
-      body: 'Agents on Azure AI Foundry and Google ADK, vector retrieval with Qdrant, tool use and function calling, deployed on Azure, GCP and AWS.',
+      title: 'card.ai.title',
+      body: 'card.ai.body',
       animation: 'fade-right',
       link: 'https://ai.azure.com/'
     }
