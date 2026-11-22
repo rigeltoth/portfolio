@@ -6,12 +6,20 @@ module.exports = {
     './pages/**/*.{html,ts}',
     './layout/**/*.{html,ts}'
   ],
+  // Neon card colors are built at runtime ("text-" + color), so JIT can't see them.
+  safelist: [
+    { pattern: /^(text|border)-(bl|grn|prpl|pnk)$/ },
+    { pattern: /^ring-(bl|grn|prpl|pnk)$/, variants: ['hover'] },
+  ],
   theme: {
     screens: {
       'xs': '425px',
       ...defaultTheme.screens,
     },
     extend: {
+      fontFamily: {
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         'bl': '#1d8cf8',
         'ndg': '#171941',
