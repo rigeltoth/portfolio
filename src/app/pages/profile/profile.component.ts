@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationOptions } from 'ngx-lottie';
-import { SwiperOptions } from 'swiper';
 
 @Component({
+  standalone: false,
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
@@ -65,28 +65,6 @@ export class ProfileComponent implements OnInit {
     }
   ]
 
-  config: SwiperOptions = {
-    loop: true,
-    speed: 500,
-    grabCursor: true,
-    effect: 'coverflow',
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false
-    },
-    spaceBetween: 80,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 5,
-      depth: 85,
-      modifier: 2,
-      slideShadows: true
-    },
-
-
-  }
   constructor() { }
 
   ngOnInit(): void {

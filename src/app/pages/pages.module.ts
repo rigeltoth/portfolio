@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
@@ -8,13 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { ComponentsModule } from '../components/components.module';
 
-import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
-import { LottieModule } from 'ngx-lottie';
-import player from 'lottie-web';
-
-export function playerFactory() {
-  return player;
-}
+import { LottieComponent } from 'ngx-lottie';
 
 @NgModule({
   declarations: [
@@ -26,8 +20,8 @@ export function playerFactory() {
     CommonModule,
     PagesRoutingModule,
     ComponentsModule,
-    NgxUsefulSwiperModule,
-    LottieModule.forRoot({ player: playerFactory })
-  ]
+    LottieComponent
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PagesModule { }

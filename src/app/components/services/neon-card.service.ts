@@ -13,7 +13,7 @@ export class NeonCardService {
       // alt: '',
       color: "bl",
       index: 0,
-      title: 'Angular 13 CLI',
+      title: 'Angular',
       body: 'Experience developing SPA web apps using concepts such as Lazy loading, routing, services, pipes, connecting with REST APIs - Get Post Delete Update, authorization authentication and much more',
       animation: 'fade-right',
       link: 'https://angular.io/'

@@ -17,24 +17,18 @@
       >
         Skills
       </h1>
-      <swiper [config]="config">
-        <div class="swiper-wrapper mt-10">
-          <img
-            class="swiper-slide"
-            *ngFor="let img of Imgs"
-            [src]="img.src"
-            [alt]="img.alt"
-          />
-        </div>
-      </swiper>
+      <swiper-container class="block mt-10" loop="true" speed="500" grab-cursor="true" effect="coverflow" autoplay-delay="1000" autoplay-disable-on-interaction="false" space-between="80" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="5" coverflow-effect-depth="85" coverflow-effect-modifier="2" coverflow-effect-slide-shadows="true">
+        <swiper-slide class="swiper-slide" *ngFor="let img of Imgs"><img [src]="img.src" [alt]="img.alt" /></swiper-slide>
+      </swiper-container>
       <h1 class="text-center w-full text-blue-200 px-4 pt-6 lg:mx-10">
-        Creation and deployment of SPA applications, using Angular 13, applying
-        concepts such as routing, services, pipes, interfaces and connecting to
-        API REST through HttpClient, knowing SCSS, Tailwind, Bootstrap 4-5 and
-        Bootswatch, including responsive UI/UX designs <br /><br />
-        For the NodeJs Backend, using RxJs, Express and some Middlewares like
-        morgan, I can communicate to NoSQL databases like MongoDB, or SQL like
-        MySQL
+        Software developer with 5+ years building production systems for Copa
+        Airlines - Wingo and XM. On the frontend I build SPAs with Angular, React
+        and Next.js in TypeScript; on the backend I work with Python (FastAPI),
+        Node.js (NestJS, Express) and Java (Spring Boot, WebFlux), backed by
+        PostgreSQL, Redis and MongoDB <br /><br />
+        Today I focus on AI agents and LLM applications: agents on Azure AI
+        Foundry, vector retrieval with Qdrant, tool use and function calling, and
+        Google ADK, shipped with Docker and CI/CD on Azure, GCP and AWS
       </h1>
     </div>
 
@@ -57,10 +51,10 @@
           <h3 class="text-sm text-sky-600 mb-8">Pro Skills</h3>
 
           <div class="flex justify-between text-sm text-bl">
-            English Level <span>70%</span>
+            English (C1) <span>90%</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
-            <div class="bg-bl h-2 rounded-full" style="width: 70%"></div>
+            <div class="bg-bl h-2 rounded-full" style="width: 90%"></div>
           </div>
 
           <div class="flex justify-between text-sm text-pink-500 mt-2">

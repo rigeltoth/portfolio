@@ -5,6 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
+import { provideLottieOptions } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 
 @NgModule({
@@ -17,7 +23,7 @@ import { LayoutModule } from './layout/layout.module';
     FormsModule,
     LayoutModule
   ],
-  providers: [],
+  providers: [provideLottieOptions({ player: playerFactory })],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

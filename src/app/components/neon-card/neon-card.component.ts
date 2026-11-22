@@ -2,6 +2,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { NeonCardModel } from '../models/neon-card.model';
 
 @Component({
+  standalone: false,
   selector: 'app-neon-card',
   templateUrl: './neon-card.component.html',
   styleUrls: ['./neon-card.component.scss']

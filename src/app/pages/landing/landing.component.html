@@ -57,11 +57,9 @@
       </h1>
     </div>
     <div class="flex flex-col md:mx-32 mt-20 w-full sm:w-3/4">
-      <swiper [config]="config" >
-        <div class="swiper-wrapper">
-          <img class="swiper-slide" *ngFor="let img of Imgs" [src]="img.src" [alt]="img.alt" />
-        </div>
-      </swiper>
+      <swiper-container loop="true" speed="1000" grab-cursor="true" effect="cube" autoplay-delay="1000" autoplay-disable-on-interaction="false" space-between="80" centered-slides="true">
+        <swiper-slide class="swiper-slide" *ngFor="let img of Imgs"><img [src]="img.src" [alt]="img.alt" /></swiper-slide>
+      </swiper-container>
     </div>
   </div>
 
