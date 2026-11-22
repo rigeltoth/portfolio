@@ -29,7 +29,7 @@
         <div
           class="img-pl">
           <a [routerLink]="['/landing']">
-            <picture><source media="(max-width: 767px)" srcset="./assets/img/lndng-mv.png"><img class="rounded" src="./assets/img/lndng.png" [alt]="'home.preview.services' | t"></picture>
+            <picture><source media="(max-width: 767px)" [srcset]="'./assets/img/previews/lndng-' + prefs.theme() + '-' + prefs.lang() + '-mv.jpg'"><img class="rounded" [src]="'./assets/img/previews/lndng-' + prefs.theme() + '-' + prefs.lang() + '.jpg'" [alt]="'home.preview.services' | t"></picture>
           </a>
         </div>
         <div class="flex flex-row justify-center lg:mt-5">
@@ -42,7 +42,7 @@
         class="flex flex-col w-[45%] lg:w-2/5">
         <div
           class="img-pl">
-          <a [routerLink]="['/profile']"> <picture><source media="(max-width: 767px)" srcset="./assets/img/prfl-mv.png"><img class="rounded" src="./assets/img/prfl.png" [alt]="'home.preview.profile' | t"></picture> </a>
+          <a [routerLink]="['/profile']"> <picture><source media="(max-width: 767px)" [srcset]="'./assets/img/previews/prfl-' + prefs.theme() + '-' + prefs.lang() + '-mv.jpg'"><img class="rounded" [src]="'./assets/img/previews/prfl-' + prefs.theme() + '-' + prefs.lang() + '.jpg'" [alt]="'home.preview.profile' | t"></picture> </a>
         </div>
         <div class="flex flex-row justify-center lg:mt-5">
           <a [routerLink]="['/profile']"

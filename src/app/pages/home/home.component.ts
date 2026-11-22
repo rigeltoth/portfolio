@@ -4,6 +4,7 @@ import { AnimationOptions } from 'ngx-lottie';
 import { NeonCardModel } from '../../components/models/neon-card.model';
 import { NeonCardComponent } from '../../components/neon-card/neon-card.component';
 import { NeonCardService } from '../../components/services/neon-card.service';
+import { PrefsService } from '../../prefs';
 
 @Component({
   standalone: false,
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   cards: NeonCardModel[] = []
   heroTags = ['Angular', 'TypeScript', 'Python', 'Java', 'Azure AI Foundry', 'tag.agents']
   constructor(
+    public prefs: PrefsService,
     private neonCardService: NeonCardService,
     private render: Renderer2
     ) { }

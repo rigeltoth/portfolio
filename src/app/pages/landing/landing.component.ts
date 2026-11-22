@@ -12,9 +12,9 @@ export class LandingComponent implements OnInit {
   // Facts from the CV; labels are translation keys.
   stats = [
     { value: '5+', label: 'stat.years', color: 'text-bl' },
-    { value: '13', label: 'stat.team', color: 'text-pink-500' },
+    { value: '4', label: 'stat.airline', color: 'text-pink-500' },
     { value: '3', label: 'stat.clouds', color: 'text-grn' },
-    { value: '3', label: 'stat.channels', color: 'text-prpl' },
+    { value: '3', label: 'stat.industries', color: 'text-prpl' },
   ]
 
   constructor() { }

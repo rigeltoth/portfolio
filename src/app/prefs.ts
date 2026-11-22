@@ -106,9 +106,9 @@ const DICT: Record<Lang, Record<string, string>> = {
     'svc.cta': "What are you waiting for? Let's build the future.",
     'svc.cta.sub': 'Tell me about your product, your team or your idea, and let\'s see how I can help.',
     'stat.years': 'years building production systems',
-    'stat.team': 'person founding team I lead',
+    'stat.airline': 'years building airline systems for Copa Airlines - Wingo',
     'stat.clouds': 'clouds: Azure, GCP and AWS',
-    'stat.channels': 'channels for my AI agent: WhatsApp, Instagram, Messenger',
+    'stat.industries': 'industries: aviation, energy and e-commerce',
 
     'prof.skills': 'Skills',
     'prof.bio1': 'Senior software developer with 5+ years building production systems for Copa Airlines - Wingo and XM. On the frontend I build SPAs with Angular, React and Next.js in TypeScript; on the backend I work with Python (FastAPI), Node.js (NestJS, Express) and Java (Spring Boot, WebFlux), backed by PostgreSQL, Redis and MongoDB',
@@ -173,9 +173,9 @@ const DICT: Record<Lang, Record<string, string>> = {
     'svc.cta': '¿Qué esperas? Construyamos el futuro.',
     'svc.cta.sub': 'Cuéntame sobre tu producto, tu equipo o tu idea, y veamos cómo puedo ayudarte.',
     'stat.years': 'años construyendo sistemas en producción',
-    'stat.team': 'personas en el equipo fundador que lidero',
+    'stat.airline': 'años construyendo sistemas de aerolínea para Copa Airlines - Wingo',
     'stat.clouds': 'nubes: Azure, GCP y AWS',
-    'stat.channels': 'canales de mi agente de IA: WhatsApp, Instagram, Messenger',
+    'stat.industries': 'industrias: aviación, energía y e-commerce',
 
     'prof.skills': 'Habilidades',
     'prof.bio1': 'Desarrollador de software senior con más de 5 años construyendo sistemas en producción para Copa Airlines - Wingo y XM. En el frontend construyo SPAs con Angular, React y Next.js en TypeScript; en el backend trabajo con Python (FastAPI), Node.js (NestJS, Express) y Java (Spring Boot, WebFlux), sobre PostgreSQL, Redis y MongoDB',
