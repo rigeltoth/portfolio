@@ -40,19 +40,21 @@
 
       </div>
 
-    <!-- hire me -->
-  <div class="grid grid-cols-1 md:grid-cols-2 my-32 justify-items-center mx-3">
-    <div data-aos="zoom-in" data-aos-easing="ease-in-out"
-    class="flex items-center justify-center">
-      <h1 class="text-center text-3xl sm:text-4xl text-white mx-4 sm:mx-16">
-        {{ 'svc.cta' | t }}
-      </h1>
+    <!-- highlights + call to action -->
+  <section class="container mx-auto my-24 lg:my-32 px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right" class="text-center lg:text-left">
+      <h2 class="text-3xl sm:text-4xl text-white font-bold">{{ 'svc.cta' | t }}</h2>
+      <p class="mt-4 text-lg text-blue-200">{{ 'svc.cta.sub' | t }}</p>
+      <a href="https://wa.me/573216233719?text=Hi%20Ron!,%20let's%20work%20together" target="_blank" rel="noopener"
+        class="inline-block mt-8 px-6 py-3 rounded-full bg-bl text-white font-medium shadow-lg shadow-bl/30 ease-in-out duration-300 hover:scale-105">{{ 'hero.cta.contact' | t }}</a>
     </div>
-    <div class="flex flex-col md:mx-32 mt-20 w-full sm:w-3/4">
-      <swiper-container loop="true" speed="1000" grab-cursor="true" effect="cube" autoplay-delay="3000" autoplay-disable-on-interaction="false" space-between="80" centered-slides="true">
-        <swiper-slide class="swiper-slide" *ngFor="let img of Imgs"><img [src]="img.src" [alt]="img.alt" /></swiper-slide>
-      </swiper-container>
-    </div>
-  </div>
+    <ul class="grid grid-cols-2 gap-4">
+      <li *ngFor="let s of stats; let i = index" data-aos="zoom-in" [attr.data-aos-delay]="i * 120"
+        class="card text-center py-8">
+        <div class="text-4xl sm:text-5xl font-bold {{ s.color }}">{{ s.value }}</div>
+        <div class="mt-2 text-sm sm:text-base text-blue-200">{{ s.label | t }}</div>
+      </li>
+    </ul>
+  </section>
 
 </div>

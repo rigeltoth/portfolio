@@ -9,31 +9,12 @@ import * as AOS from 'aos';
 })
 export class LandingComponent implements OnInit {
 
-  Imgs = [
-    {
-      src: './assets/imgLanding/appDev.jpg',
-      alt: ''
-    },
-    {
-      src: './assets/imgLanding/digitalMarketing.jpg',
-      alt: ''
-    },
-    {
-      src: './assets/imgLanding/websiteDev.jpg',
-      alt: ''
-    },
-    {
-      src: './assets/imgLanding/appDev.jpg',
-      alt: ''
-    },
-    {
-      src: './assets/imgLanding/digitalMarketing.jpg',
-      alt: ''
-    },
-    {
-      src: './assets/imgLanding/websiteDev.jpg',
-      alt: ''
-    },
+  // Facts from the CV; labels are translation keys.
+  stats = [
+    { value: '5+', label: 'stat.years', color: 'text-bl' },
+    { value: '13', label: 'stat.team', color: 'text-pink-500' },
+    { value: '3', label: 'stat.clouds', color: 'text-grn' },
+    { value: '3', label: 'stat.channels', color: 'text-prpl' },
   ]
 
   constructor() { }

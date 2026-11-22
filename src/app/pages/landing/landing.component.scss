@@ -19,28 +19,3 @@
 }
 
 
-.swiper {
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-
-// Fixed box: the cube effect otherwise feeds slide height back into the container and grows forever.
-swiper-container {
-  display: block;
-  width: 100%;
-  max-width: 28rem;
-  aspect-ratio: 4 / 3;
-  margin: 0 auto;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
