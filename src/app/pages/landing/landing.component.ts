@@ -39,7 +39,12 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    AOS.init()
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    })
   }
 
 }

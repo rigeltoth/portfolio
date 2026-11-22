@@ -6,7 +6,16 @@
     z-index: 2;
   }
 .card{
-  @apply rounded-lg p-3;
+  @apply rounded-lg p-3 border border-white/10 transition-all duration-500 ease-out hover:-translate-y-2;
+}
+.card i{
+  @apply inline-block transition-transform duration-500 ease-out;
+}
+.card:hover i{
+  transform: rotate(-12deg) scale(1.25);
+}
+@media (prefers-reduced-motion: reduce){
+  .card, .card i{ transition: none; transform: none !important; }
 }
 
 
