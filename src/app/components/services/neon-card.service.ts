@@ -7,67 +7,33 @@ import { NeonCardModel } from '../models/neon-card.model';
 export class NeonCardService {
 
   cards: NeonCardModel[] = [
-
     {
-      img: './assets/imgwt/ng.png',
-      // alt: '',
+      img: './assets/tech/angular.svg',
       color: "bl",
       index: 0,
-      title: 'Angular',
-      body: 'Experience developing SPA web apps using concepts such as Lazy loading, routing, services, pipes, connecting with REST APIs - Get Post Delete Update, authorization authentication and much more',
+      title: 'Frontend',
+      body: 'SPAs in Angular, React and Next.js with TypeScript: lazy loading, routing, state with RxJS, REST integrations, auth flows and responsive UI with Tailwind.',
       animation: 'fade-right',
-      link: 'https://angular.io/'
+      link: 'https://angular.dev/'
     },
     {
-      img: './assets/imgwt/nodejs.png',
-      // alt: '',
+      img: './assets/tech/python.svg',
       color: "grn",
       index: 1,
-      title: 'Node Js',
-      body: 'Experience in REST API backend development, using tools like Rxjs, express, json web token, middlewares, controllers, routes, babel, typescript, connecting to databases like Mongodb or MySQL and much more.',
+      title: 'Backend',
+      body: 'APIs with Python (FastAPI), Node.js (NestJS, Express) and Java (Spring Boot, WebFlux), backed by PostgreSQL, Redis and MongoDB, shipped with Docker and CI/CD.',
       animation: 'fade-left',
-      link: 'https://nodejs.org/'
+      link: 'https://fastapi.tiangolo.com/'
     },
     {
-      img: './assets/imgwt/github.png',
-      // alt: '',
+      img: './assets/tech/azure.svg',
       color: "prpl",
       index: 2,
-      title: 'Git & GitHub',
-      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
+      title: 'AI Agents & LLMs',
+      body: 'Agents on Azure AI Foundry and Google ADK, vector retrieval with Qdrant, tool use and function calling, deployed on Azure, GCP and AWS.',
       animation: 'fade-right',
-      link: 'https://git-scm.com/'
-    },
-   /*  {
-      img: './assets/imgwt/bootstrap.png',
-      // alt: '',
-      color: "prpl",
-      index: 3,
-      title: 'Bootstrap',
-      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
-      animation: 'fade-right',
-      link: 'https://git-scm.com/'
-    },
-    {
-      img: './assets/imgwt/rxjs.png',
-      // alt: '',
-      color: "pnk",
-      index: 4,
-      title: 'Reactive Js',
-      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
-      animation: 'fade-right',
-      link: 'https://git-scm.com/'
-    },
-    {
-      img: './assets/imgwt/mysql.png',
-      // alt: '',
-      color: "bl",
-      index: 5,
-      title: 'Git & GitHub',
-      body: 'Experience in code versioning software and repositories, both remote and local, knowing how commit, pull, push, log and many other commands work, including GitHub Pages',
-      animation: 'fade-right',
-      link: 'https://git-scm.com/'
-    }, */
+      link: 'https://ai.azure.com/'
+    }
   ]
   constructor() {}
 
